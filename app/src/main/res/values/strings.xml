@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Aegis Application</string>
+    <string name="enter_name">Enter Name</string>
+    <string name="button_submit">Submit Button</string>
 </resources>
