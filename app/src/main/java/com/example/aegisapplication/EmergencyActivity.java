@@ -1,6 +1,11 @@
 package com.example.aegisapplication;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -11,5 +16,17 @@ public class EmergencyActivity extends AppCompatActivity {
         setContentView(R.layout.activity_emergency);
     }
 
+    public void onEmergencyClick(View view)
+    {
+        Intent intent = new Intent(Intent.ACTION_DIAL);
+        intent.setData(Uri.parse("tel:911"));
+        startActivity(intent);
+    }
+
+    public void onNonEmergencyClick(View view)
+    {
+        Intent intent = new Intent(this, SurveyActivity.class);
+        startActivity(intent);
+    }
 
 }
