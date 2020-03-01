@@ -27,4 +27,11 @@ public class InformationActivity extends AppCompatActivity {
         InformationPresenter presenter = new InformationPresenter(this);
         presenter.goToInternet(url);
     }
+
+    // Initiates Incognito mode to leave app. Can be duplicated for every Activity
+    public void startIncognito(View view){
+        Incognito i = new Incognito(this);
+        i.leaveApp();
+
+    }
 }
