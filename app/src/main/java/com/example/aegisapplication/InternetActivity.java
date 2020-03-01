@@ -32,12 +32,12 @@ public class InternetActivity extends AppCompatActivity {
         webView.loadUrl(url);
 
         WebSettings webSettings = webView.getSettings();
-        //webSettings.setJavaScriptEnabled(true);
+        webSettings.setJavaScriptEnabled(true);
         webSettings.getDisplayZoomControls();
     }
 
 
-    // When the phones back button is pressed, the web browser will go to the previous page in its history.
+    // When the phone's back button is pressed, the web browser will go to the previous page in its history.
     @Override
     public void onBackPressed() {
         if (webView.canGoBack()){
