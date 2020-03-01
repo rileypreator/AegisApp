@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void sendBegin(View view){
-        Intent intent = new Intent(this, EmergencyActivity.class);
-        startActivity(intent);
+        Intent intent2 = new Intent(this, EmergencyActivity.class);
+        startActivity(intent2);
     }
 }
