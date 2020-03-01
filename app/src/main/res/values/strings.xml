@@ -4,4 +4,5 @@
     <string name="button_submit">Submit Button</string>
     <string name="web_button1">Website_1</string>
     <string name="web_address1">http:www.instagram.com</string>
+    <string name="incognito_web_address">https://www.instagram.com/pickersstickers/</string>
 </resources>
