@@ -17,8 +17,8 @@ public class InformationActivity extends AppCompatActivity {
     //The two functions below are part of the internet code. These can be duplicated in any class
     // to call the InternetActivity
     // This function gets a URL from the XML string list
-    public void getPinterestUrl(View view){
-        String url = getString(R.string.XXXXXXX);
+    public void getWebUrl(View view){
+        String url = getString(R.string.web_address1);
         openInternet(url);
     }
 
