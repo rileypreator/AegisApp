@@ -26,4 +26,10 @@ public class SurveyActivity extends AppCompatActivity {
         Intent intent = new Intent(this, InformationActivity.class);
         startActivity(intent);
     }
+
+    // Initiates Incognito mode to leave app. Can be duplicated for every Activity
+    public void startIncognito(View view){
+        Incognito i = new Incognito(this);
+        i.leaveApp();
+    }
 }

@@ -2,6 +2,7 @@ package com.example.aegisapplication;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
@@ -45,5 +46,11 @@ public class InternetActivity extends AppCompatActivity {
         } else {
             super.onBackPressed();
         }
+    }
+
+    // Initiates Incognito mode to leave app. Can be duplicated for every Activity
+    public void startIncognito(View view){
+        Incognito i = new Incognito(this);
+        i.leaveApp();
     }
 }

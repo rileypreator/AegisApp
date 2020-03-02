@@ -18,4 +18,10 @@ public class MainActivity extends AppCompatActivity {
         Intent intent2 = new Intent(this, EmergencyActivity.class);
         startActivity(intent2);
     }
+
+    // Initiates Incognito mode to leave app. Can be duplicated for every Activity
+    public void startIncognito(View view){
+        Incognito i = new Incognito(this);
+        i.leaveApp();
+    }
 }
