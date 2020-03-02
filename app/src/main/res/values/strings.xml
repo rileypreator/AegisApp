@@ -6,23 +6,48 @@
     <string name="web_address1">http:www.instagram.com</string>
     <string name="incognito_web_address">https://www.instagram.com/pickersstickers/</string>
 
+    <!-- Verbal abuse definition and resources -->
+    <string name="verbal_definition">The repeated improper and excessive use of language to
+        humiliate someone, or to undermine someone’s dignity.</string>
     <string name="verbal_other_1">https://dayoneservices.org/verbal-abuse/</string>
     <string name="verbal_other_2">https://www.psychologytoday.com/us/blog/the-mysteries-love/201612/the-most-effective-way-p ut-end-verbal-abuse</string>
     <string name="verbal_self_1">https://www.seleni.org/advice-support/2018/3/20/are-you-being-verbally-abused</string>
     <string name="verbal_self_2">https://esme.com/resources/domestic-violence/what-should-i-do-if-i-am-a-victim-of-verbal-abuse</string>
 
-    <string name="mental_emotional_other_1">https://www.healthline.com/health/child-neglect-and-psychological-abuse</string>
-    <string name="mental_emotional_other_2">https://bandbacktogether.com/master-resource-links-2/abuse-resources/emotional-abuse-resources/</string>
-    <string name="mental_emotional_other_3">https://www.healthline.com/health/signs-of-mental-abuse</string>
-    <string name="mental_emotional_self_1">https://www.thehotline.org/is-this-abuse/​</string>
-    <string name="mental_emotional_self_2">https://www.thehotline.org/</string>
+    <!-- Mental and Emotional abuse definition and resources -->
+    <string name="mental_definition">Involves a person’s attempts to frighten, control,
+        or isolate you. It’s in the abuser’s words and actions, as well as their persistence in
+        these behaviors to twist and contort the reality of a victim in order to obtain control
+        of them. Abuser uses fear, humiliation, or verbal assault to undermine the self-esteem of
+        the victim.</string>
+    <string name="mental_other_1">https://www.healthline.com/health/child-neglect-and-psychological-abuse</string>
+    <string name="mental_other_2">https://bandbacktogether.com/master-resource-links-2/abuse-resources/emotional-abuse-resources/</string>
+    <string name="mental_other_3">https://www.healthline.com/health/signs-of-mental-abuse</string>
+    <string name="mental_self_1">https://www.thehotline.org/is-this-abuse/​</string>
+    <string name="mental_self_2">https://www.thehotline.org/</string>
 
+    <!-- Physical abuse definition and resources -->
+    <string name="physical_definition">Domestic violence includes behaviors that physically harm,
+        arouse fear, prevent a partner from doing what they wish or force them to behave in ways
+        they do not want. It includes the use of physical and sexual violence, threats and
+        intimidation, emotional abuse and economic deprivation. Many of these different forms of
+        domestic violence/abuse can be occurring at any one time within the same intimate
+        relationship.</string>
     <string name="physical_other_1">https://www.thehotline.org/help/help-for-friends-and-family/</string>
     <string name="physical_other_2">https://www.verywellmind.com/how-to-help-a-victim-of-domestic-violence-66533</string>
     <string name="physical_self_1">https://www.thehotline.org/help/path-to-safety/</string>
     <string name="physical_self_2">https://www.helpguide.org/articles/abuse/getting-out-of-an-abusive-relationship.htm</string>
     <string name="physical_self_3">https://familycrisiscenter.wixsite.com/familycrisiscenter/domestic-violence</string>
 
+    <!-- Sexual abuse definition and resources -->
+    <string name="sexual_definition">Sexual Assault: An act in which a person
+        intentionally sexually touches another person without that person\'s consent, or coerces
+        or physically forces a person to engage in a sexual act against their will.
+        &#xD;
+        Rape: A type of sexual assault initiated by one or more persons against another
+        person without that person's consent. The act may be carried out by physical force, or
+        where the person is under threat or manipulation, or with a person who is incapable of
+        valid consent.</string>
     <string name="sexual_other_1">https://www.womenslaw.org/about-abuse/helping-others/family-friends-and-co-workers</string>
     <string name="sexual_other_2">https://www.rainn.org/articles/tips-talking-survivors-sexual-assault</string>
     <string name="sexual_other_3">https://sapac.umich.edu/article/helping-survivor-sexual-assault</string>
