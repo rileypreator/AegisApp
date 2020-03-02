@@ -5,4 +5,29 @@
     <string name="web_button1">Website_1</string>
     <string name="web_address1">http:www.instagram.com</string>
     <string name="incognito_web_address">https://www.instagram.com/pickersstickers/</string>
+
+    <string name="verbal_other_1">https://dayoneservices.org/verbal-abuse/</string>
+    <string name="verbal_other_2">https://www.psychologytoday.com/us/blog/the-mysteries-love/201612/the-most-effective-way-p ut-end-verbal-abuse</string>
+    <string name="verbal_self_1">https://www.seleni.org/advice-support/2018/3/20/are-you-being-verbally-abused</string>
+    <string name="verbal_self_2">https://esme.com/resources/domestic-violence/what-should-i-do-if-i-am-a-victim-of-verbal-abuse</string>
+
+    <string name="mental_emotional_other_1">https://www.healthline.com/health/child-neglect-and-psychological-abuse</string>
+    <string name="mental_emotional_other_2">https://bandbacktogether.com/master-resource-links-2/abuse-resources/emotional-abuse-resources/</string>
+    <string name="mental_emotional_other_3">https://www.healthline.com/health/signs-of-mental-abuse</string>
+    <string name="mental_emotional_self_1">https://www.thehotline.org/is-this-abuse/​</string>
+    <string name="mental_emotional_self_2">https://www.thehotline.org/</string>
+
+    <string name="physical_other_1">https://www.thehotline.org/help/help-for-friends-and-family/</string>
+    <string name="physical_other_2">https://www.verywellmind.com/how-to-help-a-victim-of-domestic-violence-66533</string>
+    <string name="physical_self_1">https://www.thehotline.org/help/path-to-safety/</string>
+    <string name="physical_self_2">https://www.helpguide.org/articles/abuse/getting-out-of-an-abusive-relationship.htm</string>
+    <string name="physical_self_3">https://familycrisiscenter.wixsite.com/familycrisiscenter/domestic-violence</string>
+
+    <string name="sexual_other_1">https://www.womenslaw.org/about-abuse/helping-others/family-friends-and-co-workers</string>
+    <string name="sexual_other_2">https://www.rainn.org/articles/tips-talking-survivors-sexual-assault</string>
+    <string name="sexual_other_3">https://sapac.umich.edu/article/helping-survivor-sexual-assault</string>
+    <string name="sexual_other_4">https://www.google.com/amp/s/www.nytimes.com/2019/02/27/smarter-living/sexual-abuse-assa ult-support-mental-health.amp.html</string>
+    <string name="sexual_self_1">https://www.helpguide.org/articles/ptsd-trauma/recovering-from-rape-and-sexual-trauma. htm</string>
+    <string name="sexual_self_2">https://victimconnect.org/learn/types-of-crime/sexual-assault/</string>
+    <string name="sexual_self_3">https://victimsofcrime.org/help-for-crime-victims/get-help-bulletins-for-crime-victims/bulle tins-for-teens/sexual-assault</string>
 </resources>
