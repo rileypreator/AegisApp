@@ -3,5 +3,5 @@
     <color name="colorPrimary">#EEEEEE</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#3e9ce4</color>
-
+    <color name="incognito_wings_background">#123CA6</color>
 </resources>
