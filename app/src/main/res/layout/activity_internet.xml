@@ -5,25 +5,36 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".InternetActivity">
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1">
 
-    <WebView
-        android:id="@+id/webview"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        <WebView
+            android:id="@+id/webview"
+            android:layout_width="match_parent"
+            android:layout_height="734dp" />
+
+    </FrameLayout>
 
     <ImageButton
         android:id="@+id/incognitoButton"
         style="@android:style/Widget.DeviceDefault.ImageButton"
         android:layout_width="60dp"
         android:layout_height="60dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="right"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="15dp"
         android:background="@drawable/incognito_wings_background"
+        android:baselineAlignBottom="true"
         android:contentDescription="incognito function"
         android:onClick="startIncognito"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="@mipmap/incognito_wings" />
+
 
 </RelativeLayout>
