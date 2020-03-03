@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 
 public class SurveyActivity extends AppCompatActivity {
+    boolean isForMe;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,13 +18,17 @@ public class SurveyActivity extends AppCompatActivity {
 
     public void onMyselfClick(View view)
     {
+        isForMe = true;
         Intent intent = new Intent(this, InformationActivity.class);
+        intent.putExtra("isForMe", isForMe);
         startActivity(intent);
     }
 
     public void onSomeoneElseClick(View view)
     {
+        isForMe = false;
         Intent intent = new Intent(this, InformationActivity.class);
+        intent.putExtra("isForMe", isForMe);
         startActivity(intent);
     }
 
