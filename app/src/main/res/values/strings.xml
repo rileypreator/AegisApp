@@ -6,6 +6,18 @@
     <string name="web_address1">http:www.instagram.com</string>
     <string name="incognito_web_address">https://www.instagram.com/pickersstickers/</string>
 
+    <!-- Verbal resource array -->
+    <string-array name="verbal_forMe">
+        <item>@string/verbal_self_1</item>
+        <item>@string/verbal_self_2</item>
+    </string-array>
+
+    <!-- Verbal resource array -->
+    <string-array name="verbal_forSomeoneElse">
+        <item>@string/verbal_other_1</item>
+        <item>@string/verbal_other_2</item>
+    </string-array>
+
     <!-- Verbal abuse definition and resources -->
     <string name="verbal_definition">The repeated improper and excessive use of language to
         humiliate someone, or to undermine someone’s dignity.</string>
@@ -13,6 +25,19 @@
     <string name="verbal_other_2">https://www.psychologytoday.com/us/blog/the-mysteries-love/201612/the-most-effective-way-p ut-end-verbal-abuse</string>
     <string name="verbal_self_1">https://www.seleni.org/advice-support/2018/3/20/are-you-being-verbally-abused</string>
     <string name="verbal_self_2">https://esme.com/resources/domestic-violence/what-should-i-do-if-i-am-a-victim-of-verbal-abuse</string>
+
+    <!-- Mental resources array -->
+    <string-array name="mental_forMe">
+        <item>@string/mental_self_1</item>
+        <item>@string/mental_self_2</item>
+    </string-array>
+
+    <!-- Mental resources array -->
+    <string-array name="mental_forSomeoneElse">
+        <item>@string/mental_other_1</item>
+        <item>@string/mental_other_2</item>
+        <item>@string/mental_other_3</item>
+    </string-array>
 
     <!-- Mental and Emotional abuse definition and resources -->
     <string name="mental_definition">Involves a person’s attempts to frighten, control,
@@ -26,6 +51,19 @@
     <string name="mental_self_1">https://www.thehotline.org/is-this-abuse/​</string>
     <string name="mental_self_2">https://www.thehotline.org/</string>
 
+    <!-- Physical resources array -->
+    <string-array name="physical_forMe">
+        <item>@string/physical_self_1</item>
+        <item>@string/physical_self_2</item>
+        <item>@string/physical_self_3</item>
+    </string-array>
+
+    <!-- Physical resources array -->
+    <string-array name="physical_forSomeoneElse">
+        <item>@string/physical_other_1</item>
+        <item>@string/physical_other_2</item>
+    </string-array>
+
     <!-- Physical abuse definition and resources -->
     <string name="physical_definition">Domestic violence includes behaviors that physically harm,
         arouse fear, prevent a partner from doing what they wish or force them to behave in ways
@@ -38,6 +76,21 @@
     <string name="physical_self_1">https://www.thehotline.org/help/path-to-safety/</string>
     <string name="physical_self_2">https://www.helpguide.org/articles/abuse/getting-out-of-an-abusive-relationship.htm</string>
     <string name="physical_self_3">https://familycrisiscenter.wixsite.com/familycrisiscenter/domestic-violence</string>
+
+    <!-- Sexual resource array -->
+    <string-array name="sexual_forMe">
+        <item>@string/sexual_self_1</item>
+        <item>@string/sexual_self_2</item>
+        <item>@string/sexual_self_3</item>
+    </string-array>
+
+    <!-- Sexual resource array -->
+    <string-array name="sexual_forSomeoneElse">
+        <item>@string/sexual_other_1</item>
+        <item>@string/sexual_other_2</item>
+        <item>@string/sexual_other_3</item>
+        <item>@string/sexual_other_4</item>
+    </string-array>
 
     <!-- Sexual abuse definition and resources -->
     <string name="sexual_definition">Sexual Assault: An act in which a person

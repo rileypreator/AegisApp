@@ -16,6 +16,7 @@
         <activity android:name=".InternetActivity"></activity>
         <activity android:name=".OptionsActivity"></activity>
         <activity android:name=".SurveyActivity"></activity>
+        <activity android:name=".ResourceActivity"></activity>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
