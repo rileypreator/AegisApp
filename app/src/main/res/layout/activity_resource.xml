@@ -6,20 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".ResourceActivity">
 
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="167dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="156dp"
-        android:onClick="getWebUrl"
-        android:text="@string/web_button1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <ImageButton
         android:id="@+id/incognitoButton"
         style="@android:style/Widget.DeviceDefault.ImageButton"
@@ -39,8 +25,17 @@
         android:id="@+id/listView2"
         android:layout_width="409dp"
         android:layout_height="597dp"
-        android:layout_marginTop="70dp"
+        android:layout_marginTop="49dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button4" />
+        app:layout_constraintTop_toBottomOf="@+id/spinner2" />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="250dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="49dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
