@@ -23,7 +23,7 @@ public class EmergencyActivity extends AppCompatActivity {
 
     public void onNonEmergencyClick(View view)
     {
-        Intent intent = new Intent(this, SurveyActivity.class);
+        Intent intent = new Intent(this, ContactActivity.class);
         startActivity(intent);
     }
 
