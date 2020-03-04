@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background = "@mipmap/full_temple_background"
     tools:context=".ResourceActivity">
 
     <ImageButton
@@ -13,19 +14,21 @@
         android:layout_height="60dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        android:background="@drawable/incognito_wings_background"
+        android:background="@null"
         android:contentDescription="incognito function"
         android:onClick="startIncognito"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@mipmap/incognito_wings" />
+        app:srcCompat="@mipmap/incognito_wings_foreground" />
 
     <ListView
         android:id="@+id/listView2"
-        android:layout_width="409dp"
-        android:layout_height="597dp"
-        android:layout_marginTop="49dp"
+        android:layout_width="375dp"
+        android:layout_height="335dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="130dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/spinner2" />
@@ -38,4 +41,18 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginEnd="185dp"
+        android:layout_marginBottom="1dp"
+        android:onClick="getWebUrl"
+        android:text="Internet Test"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/incognitoButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listView2" />
 </androidx.constraintlayout.widget.ConstraintLayout>
