@@ -46,6 +46,13 @@ public class ContactActivity extends AppCompatActivity {
         presenter.goToInternet(url);
     }
 
+    public void onTextClick(View view){
+        Intent smsIntent = new Intent(Intent.ACTION_VIEW);
+        smsIntent.setData(Uri.parse("sms:741741"));
+        smsIntent.putExtra("sms_body", "Help!");
+        startActivity(smsIntent);
+    }
+
     public void startIncognito(View view){
         Incognito i = new Incognito(this);
         i.leaveApp();
