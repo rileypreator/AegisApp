@@ -26,13 +26,13 @@
         android:layout_height="60dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        android:background="@drawable/incognito_wings_background"
+        android:background="@null"
         android:contentDescription="incognito function"
         android:onClick="startIncognito"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@mipmap/incognito_wings" />
+        app:srcCompat="@mipmap/incognito_wings_foreground" />
 
     <Button
         android:id="@+id/button"
@@ -88,6 +88,7 @@
             android:background="@drawable/close_window"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/openingWelcome" />
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
