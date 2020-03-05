@@ -111,6 +111,6 @@
     <string name="aegis_background">Background for Aegis</string>
     <string name="incognito_button">Button for Incognito</string>
     <string name="begin_button">Begin</string>
-    <string name="safety_alert">Safety Alert: Mobile phone use can be monitored and is impossible to completely clear. If you are afraid your internet usage might be monitored, call the National Domestic Violence Hotline at 1−800−799−7233 or TTY 1−800−787−3224.</string>
+    <string name="safety_alert">Safety Alert: Mobile phone use can be monitored and is impossible to completely clear. If you are afraid your internet usage might be monitored, call the National Domestic Violence Hotline at 1−800−799−7233. You can quickly use the Incognito Button at the botton to quickly change applications or websites.</string>
 
 </resources>

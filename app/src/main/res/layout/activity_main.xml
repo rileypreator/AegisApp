@@ -2,32 +2,12 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
 
-    <Button
-
-        android:id="@+id/beginButton"
-        android:layout_width="wrap_content"
-        android:layout_height="60dp"
-
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="25dp"
-        android:layout_marginEnd="30dp"
-        android:background="@drawable/button_shape"
-        android:fontFamily="@font/curve_thin"
-        android:shadowColor="#A8A8A8"
-        android:shadowDx="0"
-        android:shadowDy="0"
-        android:shadowRadius="5"
-        android:text="@string/begin_button"
-        android:textColor="#FFFFFF"
-        android:textSize="45sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/openingWelcomeConstraint" />
 
     <ImageView
         android:id="@+id/background"
@@ -47,32 +27,52 @@
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:background="@drawable/incognito_wings_background"
-        android:contentDescription="@string/incognito_button"
+        android:contentDescription="incognito function"
         android:onClick="startIncognito"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="@mipmap/incognito_wings" />
 
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+
+        android:layout_marginBottom="250dp"
+        android:background="@drawable/button_shape"
+        android:fontFamily="@font/curve_thin"
+        android:onClick="sendBegin"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:text="@string/begin_button"
+        android:textColor="#FFFFFF"
+        android:textSize="45sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/openingWelcomeConstraint"
-        android:layout_width="404dp"
-        android:layout_height="376dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginEnd="40dp"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="408dp"
+        android:layout_height="735dp"
+        android:background="@color/alpha_layer"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
             android:id="@+id/openingWelcome"
-            android:layout_width="0dp"
-            android:layout_height="247dp"
-            android:layout_marginTop="44dp"
-            android:background="#E6F9FF"
+            android:layout_width="386dp"
+            android:layout_height="325dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginEnd="4dp"
+            android:background="@drawable/rounded_corners"
             android:fontFamily="casual"
             android:text="@string/safety_alert"
             android:textAlignment="center"
+            android:textColor="#F2F8F3F3"
             android:textSize="22sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -85,8 +85,7 @@
             android:layout_marginEnd="10dp"
             android:width="200dp"
             android:height="200dp"
-            android:background="@drawable/closewindow"
-            android:onClick="welcomeMessageClose"
+            android:background="@drawable/close_window"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/openingWelcome" />
 
