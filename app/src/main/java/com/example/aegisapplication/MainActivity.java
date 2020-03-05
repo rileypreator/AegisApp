@@ -30,6 +30,8 @@ public class MainActivity extends AppCompatActivity {
 
         moveAlert = findViewById(R.id.closeWelcome);
 
+        Button button2;
+
         ccl = findViewById(R.id.mainLayout);
 
         moveAlert.setOnClickListener((new View.OnClickListener() {
