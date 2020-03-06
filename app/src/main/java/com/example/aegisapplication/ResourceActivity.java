@@ -12,6 +12,9 @@ import android.widget.ListView;
 import android.widget.Spinner;
 import android.widget.TextView;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+
 public class ResourceActivity extends AppCompatActivity {
 boolean isForMe;
 String resource_type;
@@ -104,11 +107,12 @@ Context context = this;
                         resources = getResources().getStringArray(R.array.mental_forSomeoneElse);
                 }
 
-                ArrayAdapter<String> adapter2 = new ArrayAdapter<String>(context, android.R.layout.simple_list_item_1, resources);
-
+                //ArrayAdapter<String> adapter2 = new ArrayAdapter<String>(context, android.R.layout.simple_list_item_1, resources);
+                ArrayList<String> a = new ArrayList<>(Arrays.asList(resources));
+                SchoolAdapter mAdapter = new SchoolAdapter(context, a);
                 ListView listView = findViewById(R.id.listView2);
-                listView.setAdapter(adapter2);
-                adapter2.notifyDataSetChanged();
+                listView.setAdapter(mAdapter);
+                mAdapter.notifyDataSetChanged();
             }
             @Override
             public void onNothingSelected(AdapterView<?> parent) {
