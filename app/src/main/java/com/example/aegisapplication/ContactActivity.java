@@ -58,5 +58,10 @@ public class ContactActivity extends AppCompatActivity {
         i.leaveApp();
     }
 
+    public void goToOptions(View view){
+        Intent i = new Intent(this, OptionsActivity.class);
+        startActivity(i);
+    }
+
 
 }

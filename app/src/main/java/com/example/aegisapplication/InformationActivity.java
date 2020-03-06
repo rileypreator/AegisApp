@@ -98,4 +98,9 @@ String whereToGoNext;
         intent.putExtra("audience_type", isForMe);
         startActivity(intent);
     }
+
+    public void goToOptions(View view){
+        Intent i = new Intent(this, OptionsActivity.class);
+        startActivity(i);
+    }
 }
