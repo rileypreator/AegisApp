@@ -2,8 +2,10 @@ package com.example.aegisapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
 
 public class OptionsActivity extends AppCompatActivity {
 
@@ -17,5 +19,12 @@ public class OptionsActivity extends AppCompatActivity {
     public void startIncognito(View view){
         Incognito i = new Incognito(this);
         i.leaveApp();
+    }
+
+    public void saveIncognitoURL(View view){
+        EditText editText = findViewById(R.id.editText);
+        String incognitoURL = editText.getText().toString();
+        OptionsPresenter options = new OptionsPresenter(this);
+        options.saveSharedPreferences(incognitoURL);
     }
 }
