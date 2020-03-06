@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="250dp"
+        android:background="@drawable/button_shape"
+        android:fontFamily="@font/curve_thin"
+        android:onClick="sendBegin"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:text="@string/begin_button"
+        android:textColor="#FFFFFF"
+        android:textSize="45sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="411dp"
+        android:layout_height="731dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/aegis_background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/aegis_main_activity_background" />
+
+    <ImageButton
+        android:id="@+id/incognitoButton"
+        style="@android:style/Widget.DeviceDefault.ImageButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/incognito_wings_background"
+        android:contentDescription="incognito function"
+        android:onClick="startIncognito"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@mipmap/incognito_wings" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/openingWelcomeConstraint"
+        android:layout_width="408dp"
+        android:layout_height="735dp"
+        android:background="@color/alpha_layer"
+        app:layout_constraintBottom_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/openingWelcome"
+            android:layout_width="386dp"
+            android:layout_height="325dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginEnd="4dp"
+            android:background="@drawable/rounded_corners"
+            android:fontFamily="casual"
+            android:text="@string/safety_alert"
+            android:textAlignment="center"
+            android:textColor="#F2F8F3F3"
+            android:textSize="22sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/closeWelcome"
+            android:layout_width="83dp"
+            android:layout_height="79dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="10dp"
+            android:width="200dp"
+            android:height="200dp"
+            android:background="@drawable/close_window"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/openingWelcome" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

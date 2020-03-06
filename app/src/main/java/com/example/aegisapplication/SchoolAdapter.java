@@ -1,5 +1,6 @@
 package com.example.aegisapplication;
 
+import android.app.Activity;
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -14,11 +15,15 @@ public class SchoolAdapter extends BaseAdapter {
 
     private Context mContext;
     private ArrayList<String> mArrSchoolData;
+    private ArrayList<String> resourcesData;
+    private Activity activity;
 
-    public SchoolAdapter(Context context, ArrayList arrSchoolData) {
+    public SchoolAdapter(Context context, ArrayList arrSchoolData, ArrayList arrResourcesData, Activity arrActivity) {
         super();
         mContext = context;
         mArrSchoolData = arrSchoolData;
+        resourcesData = arrResourcesData;
+        activity = arrActivity;
     }
 
     public int getCount() {
@@ -39,13 +44,17 @@ public class SchoolAdapter extends BaseAdapter {
 
         // Set the title and button name
         txtSchoolTitle.setText(mArrSchoolData.get(position));
-        btnAction.setText("Action " + position);
+        btnAction.setText("Go");
+
+        final int position2 = position;
 
         // Click listener of button
         btnAction.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                // Logic goes here
+                String url = resourcesData.get(position2);
+                InformationPresenter presenter = new InformationPresenter(activity);
+                presenter.goToInternet(url);
             }
         });
 
