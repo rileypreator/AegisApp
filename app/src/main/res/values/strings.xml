@@ -22,13 +22,29 @@
         <item>@string/verbal_other_2</item>
     </string-array>
 
+    <!-- Verbal resource array -->
+    <string-array name="verbal_forMe_names">
+        <item>@string/verbal_self_1_name</item>
+        <item>@string/verbal_self_2_name</item>
+    </string-array>
+
+    <!-- Verbal resource array -->
+    <string-array name="verbal_forSomeoneElse_names">
+        <item>@string/verbal_other_1_name</item>
+        <item>@string/verbal_other_2_name</item>
+    </string-array>
+
     <!-- Verbal abuse definition and resources -->
     <string name="verbal_definition">The repeated improper and excessive use of language to
         humiliate someone, or to undermine someone’s dignity.</string>
     <string name="verbal_other_1">https://dayoneservices.org/verbal-abuse/</string>
+    <string name="verbal_other_1_name">Dayone Services: Verbal Abuse</string>
     <string name="verbal_other_2">https://www.psychologytoday.com/us/blog/the-mysteries-love/201612/the-most-effective-way-p ut-end-verbal-abuse</string>
+    <string name="verbal_other_2_name">Psychology Today: Ending Verbal Abuse</string>
     <string name="verbal_self_1">https://www.seleni.org/advice-support/2018/3/20/are-you-being-verbally-abused</string>
+    <string name="verbal_self_1_name">Are You Being Verbally Abused?</string>
     <string name="verbal_self_2">https://esme.com/resources/domestic-violence/what-should-i-do-if-i-am-a-victim-of-verbal-abuse</string>
+    <string name="verbal_self_2_name">Verbal Abuse: What To Do</string>
 
     <!-- Mental resources array -->
     <string-array name="mental_forMe">
@@ -43,6 +59,19 @@
         <item>@string/mental_other_3</item>
     </string-array>
 
+    <!-- Mental resources array -->
+    <string-array name="mental_forMe_names">
+        <item>@string/mental_self_1_name</item>
+        <item>@string/mental_self_2_name</item>
+    </string-array>
+
+    <!-- Mental resources array -->
+    <string-array name="mental_forSomeoneElse_names">
+        <item>@string/mental_other_1_name</item>
+        <item>@string/mental_other_2_name</item>
+        <item>@string/mental_other_3_name</item>
+    </string-array>
+
     <!-- Mental and Emotional abuse definition and resources -->
     <string name="mental_definition">Involves a person’s attempts to frighten, control,
         or isolate you. It’s in the abuser’s words and actions, as well as their persistence in
@@ -50,10 +79,15 @@
         of them. Abuser uses fear, humiliation, or verbal assault to undermine the self-esteem of
         the victim.</string>
     <string name="mental_other_1">https://www.healthline.com/health/child-neglect-and-psychological-abuse</string>
+    <string name="mental_other_1_name">Psychological Abuse</string>
     <string name="mental_other_2">https://bandbacktogether.com/master-resource-links-2/abuse-resources/emotional-abuse-resources/</string>
+    <string name="mental_other_2_name">Emotional Abuse Resources</string>
     <string name="mental_other_3">https://www.healthline.com/health/signs-of-mental-abuse</string>
+    <string name="mental_other_3_name">Signs of Mental Abuse</string>
     <string name="mental_self_1">https://www.thehotline.org/is-this-abuse/​</string>
+    <string name="mental_self_1_name">Is This Abuse?</string>
     <string name="mental_self_2">https://www.thehotline.org/</string>
+    <string name="mental_self_2_name">The Hotline Website</string>
 
     <!-- Physical resources array -->
     <string-array name="physical_forMe">
@@ -68,6 +102,19 @@
         <item>@string/physical_other_2</item>
     </string-array>
 
+    <!-- Physical resources array -->
+    <string-array name="physical_forMe_names">
+        <item>@string/physical_self_1_name</item>
+        <item>@string/physical_self_2_name</item>
+        <item>@string/physical_self_3_name</item>
+    </string-array>
+
+    <!-- Physical resources array -->
+    <string-array name="physical_forSomeoneElse_names">
+        <item>@string/physical_other_1_name</item>
+        <item>@string/physical_other_2_name</item>
+    </string-array>
+
     <!-- Physical abuse definition and resources -->
     <string name="physical_definition">Domestic violence includes behaviors that physically harm,
         arouse fear, prevent a partner from doing what they wish or force them to behave in ways
@@ -76,10 +123,15 @@
         domestic violence/abuse can be occurring at any one time within the same intimate
         relationship.</string>
     <string name="physical_other_1">https://www.thehotline.org/help/help-for-friends-and-family/</string>
+    <string name="physical_other_1_name">Help for Friends and Family</string>
     <string name="physical_other_2">https://www.verywellmind.com/how-to-help-a-victim-of-domestic-violence-66533</string>
+    <string name="physical_other_2_name">How To Help Victims of Domestic Violence</string>
     <string name="physical_self_1">https://www.thehotline.org/help/path-to-safety/</string>
+    <string name="physical_self_1_name">The Path to Safety</string>
     <string name="physical_self_2">https://www.helpguide.org/articles/abuse/getting-out-of-an-abusive-relationship.htm</string>
+    <string name="physical_self_2_name">Getting Out of an Abusive Relationship</string>
     <string name="physical_self_3">https://familycrisiscenter.wixsite.com/familycrisiscenter/domestic-violence</string>
+    <string name="physical_self_3_name">Domestic Violence</string>
 
     <!-- Sexual resource array -->
     <string-array name="sexual_forMe">
@@ -96,6 +148,21 @@
         <item>@string/sexual_other_4</item>
     </string-array>
 
+    <!-- Sexual resource array -->
+    <string-array name="sexual_forMe_names">
+        <item>@string/sexual_self_1_name</item>
+        <item>@string/sexual_self_2_name</item>
+        <item>@string/sexual_self_3_name</item>
+    </string-array>
+
+    <!-- Sexual resource array -->
+    <string-array name="sexual_forSomeoneElse_names">
+        <item>@string/sexual_other_1_name</item>
+        <item>@string/sexual_other_2_name</item>
+        <item>@string/sexual_other_3_name</item>
+        <item>@string/sexual_other_4_name</item>
+    </string-array>
+
     <!-- Sexual abuse definition and resources -->
     <string name="sexual_definition">Sexual Assault: An act in which a person
         intentionally sexually touches another person without that person\'s consent, or coerces
@@ -106,12 +173,20 @@
         where the person is under threat or manipulation, or with a person who is incapable of
         valid consent.</string>
     <string name="sexual_other_1">https://www.womenslaw.org/about-abuse/helping-others/family-friends-and-co-workers</string>
+    <string name="sexual_other_1_name">Helping Family, Friends and Co-Workers</string>
     <string name="sexual_other_2">https://www.rainn.org/articles/tips-talking-survivors-sexual-assault</string>
+    <string name="sexual_other_2_name">Tips for Talking to Survivors</string>
     <string name="sexual_other_3">https://sapac.umich.edu/article/helping-survivor-sexual-assault</string>
+    <string name="sexual_other_3_name">Helping Survivors of Sexual Assault</string>
     <string name="sexual_other_4">https://www.google.com/amp/s/www.nytimes.com/2019/02/27/smarter-living/sexual-abuse-assa ult-support-mental-health.amp.html</string>
+    <string name="sexual_other_4_name">Sexual Abuse</string>
     <string name="sexual_self_1">https://www.helpguide.org/articles/ptsd-trauma/recovering-from-rape-and-sexual-trauma. htm</string>
+    <string name="sexual_self_1_name">Recovering from Rape and Sexual Trauma</string>
     <string name="sexual_self_2">https://victimconnect.org/learn/types-of-crime/sexual-assault/</string>
+    <string name="sexual_self_2_name">Sexual Assault</string>
     <string name="sexual_self_3">https://victimsofcrime.org/help-for-crime-victims/get-help-bulletins-for-crime-victims/bulle tins-for-teens/sexual-assault</string>
+    <string name="sexual_self_3_name">Teens and Sexual Assault</string>
+
     <string name="aegis_background">Background for Aegis</string>
     <string name="incognito_button">Button for Incognito</string>
     <string name="begin_button">Begin</string>

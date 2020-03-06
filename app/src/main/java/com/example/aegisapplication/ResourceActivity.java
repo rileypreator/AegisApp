@@ -2,6 +2,7 @@ package com.example.aegisapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
@@ -12,14 +13,19 @@ import android.widget.ListView;
 import android.widget.Spinner;
 import android.widget.TextView;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+
 public class ResourceActivity extends AppCompatActivity {
 boolean isForMe;
 String resource_type;
 String [] resources;
+String [] resources_names;
 Spinner abuseTypeSpinner;
 String [] abuseTypes = {"Physical","Sexual","Verbal","Emotional/Mental"};
 String whereToGoNext;
 Context context = this;
+Activity activity = this;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -77,38 +83,56 @@ Context context = this;
 
                 if (abuseTypes[sid] == "Physical") {
                     whereToGoNext = "physical";
-                    if(isForMe)
+                    if(isForMe) {
+                        resources_names = getResources().getStringArray(R.array.physical_forMe_names);
                         resources = getResources().getStringArray(R.array.physical_forMe);
-                    else
+                    }
+                    else {
+                        resources_names = getResources().getStringArray(R.array.physical_forSomeoneElse_names);
                         resources = getResources().getStringArray(R.array.physical_forSomeoneElse);
+                    }
                 }
                 else if (abuseTypes[sid] == "Sexual") {
                     whereToGoNext = "sexual";
-                    if(isForMe)
+                    if(isForMe) {
                         resources = getResources().getStringArray(R.array.sexual_forMe);
-                    else
+                        resources_names = getResources().getStringArray(R.array.sexual_forMe_names);
+                    }
+                    else {
                         resources = getResources().getStringArray(R.array.sexual_forSomeoneElse);
+                        resources_names = getResources().getStringArray(R.array.sexual_forSomeoneElse_names);
+                    }
                 }
                 else if (abuseTypes[sid] == "Verbal") {
                     whereToGoNext = "verbal";
-                    if(isForMe)
+                    if(isForMe) {
                         resources = getResources().getStringArray(R.array.verbal_forMe);
-                    else
+                        resources_names = getResources().getStringArray(R.array.verbal_forMe_names);
+                    }
+                    else {
                         resources = getResources().getStringArray(R.array.verbal_forSomeoneElse);
+                        resources_names = getResources().getStringArray(R.array.verbal_forSomeoneElse_names);
+                    }
                 }
                 else if (abuseTypes[sid] == "Emotional/Mental") {
                     whereToGoNext = "mental";
-                    if(isForMe)
+                    if(isForMe) {
                         resources = getResources().getStringArray(R.array.mental_forMe);
-                    else
+                        resources_names = getResources().getStringArray(R.array.mental_forMe_names);
+                    }
+                    else {
                         resources = getResources().getStringArray(R.array.mental_forSomeoneElse);
+                        resources_names = getResources().getStringArray(R.array.mental_forSomeoneElse_names);
+                    }
                 }
 
-                ArrayAdapter<String> adapter2 = new ArrayAdapter<String>(context, android.R.layout.simple_list_item_1, resources);
-
+                //ArrayAdapter<String> adapter2 = new ArrayAdapter<String>(context, android.R.layout.simple_list_item_1, resources);
+                ArrayList<String> a = new ArrayList<>(Arrays.asList(resources_names));
+                ArrayList<String> b = new ArrayList<>(Arrays.asList(resources));
+                SchoolAdapter mAdapter = new SchoolAdapter(context, a, b, activity);
                 ListView listView = findViewById(R.id.listView2);
-                listView.setAdapter(adapter2);
-                adapter2.notifyDataSetChanged();
+                listView.setAdapter(mAdapter);
+                mAdapter.notifyDataSetChanged();
             }
             @Override
             public void onNothingSelected(AdapterView<?> parent) {
