@@ -59,20 +59,20 @@
         android:id="@+id/switch1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="34dp"
+        android:layout_marginStart="33dp"
         android:layout_marginTop="68dp"
-        android:layout_marginEnd="59dp"
+        android:layout_marginEnd="53dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageView4"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <Switch
         android:id="@+id/switch2"
-        android:layout_width="44dp"
-        android:layout_height="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginStart="34dp"
-        android:layout_marginTop="46dp"
-        android:layout_marginEnd="59dp"
+        android:layout_marginTop="54dp"
+        android:layout_marginEnd="53dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageView5"
         app:layout_constraintTop_toBottomOf="@+id/switch1" />
@@ -82,7 +82,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="34dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="58dp"
+        android:layout_marginEnd="52dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageView6"
         app:layout_constraintTop_toBottomOf="@+id/switch2" />
 
@@ -90,7 +92,7 @@
         android:id="@+id/switch4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="34dp"
+        android:layout_marginStart="33dp"
         android:layout_marginTop="38dp"
         app:layout_constraintStart_toEndOf="@+id/imageView"
         app:layout_constraintTop_toBottomOf="@+id/textView8" />
@@ -99,17 +101,17 @@
         android:id="@+id/switch5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="34dp"
-        android:layout_marginTop="46dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="54dp"
         app:layout_constraintStart_toEndOf="@+id/imageView2"
         app:layout_constraintTop_toBottomOf="@+id/switch4" />
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="66dp"
-        android:layout_height="66dp"
+        android:layout_height="71dp"
         android:layout_marginStart="35dp"
-        android:layout_marginTop="43dp"
+        android:layout_marginTop="38dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
         app:srcCompat="@mipmap/instagram_icon_foreground" />
@@ -119,7 +121,7 @@
         android:layout_width="66dp"
         android:layout_height="67dp"
         android:layout_marginStart="35dp"
-        android:layout_marginTop="14dp"
+        android:layout_marginTop="20dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
         app:srcCompat="@mipmap/facebook_icon_foreground" />
@@ -128,23 +130,19 @@
         android:id="@+id/imageView3"
         android:layout_width="66dp"
         android:layout_height="66dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="28dp"
-        app:layout_constraintEnd_toStartOf="@+id/switch6"
-        app:layout_constraintHorizontal_bias="0.5"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="22dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView2"
         app:srcCompat="@mipmap/pinterest_icon_foreground" />
 
     <Switch
         android:id="@+id/switch6"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="64dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="58dp"
         android:checked="false"
-        app:layout_constraintEnd_toStartOf="@+id/imageView6"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/imageView3"
         app:layout_constraintTop_toBottomOf="@+id/switch5" />
 
@@ -152,7 +150,7 @@
         android:id="@+id/imageView4"
         android:layout_width="66dp"
         android:layout_height="66dp"
-        android:layout_marginStart="51dp"
+        android:layout_marginStart="47dp"
         android:layout_marginTop="13dp"
         app:layout_constraintStart_toEndOf="@+id/switch4"
         app:layout_constraintTop_toBottomOf="@+id/textView8"
@@ -162,10 +160,8 @@
         android:id="@+id/imageView5"
         android:layout_width="66dp"
         android:layout_height="66dp"
-        android:layout_marginStart="50dp"
+        android:layout_marginStart="47dp"
         android:layout_marginTop="20dp"
-        android:layout_marginEnd="22dp"
-        app:layout_constraintEnd_toStartOf="@+id/switch2"
         app:layout_constraintStart_toEndOf="@+id/switch5"
         app:layout_constraintTop_toBottomOf="@+id/imageView4"
         app:srcCompat="@mipmap/twiter_icon_foreground" />
@@ -174,7 +170,7 @@
         android:id="@+id/imageView6"
         android:layout_width="66dp"
         android:layout_height="66dp"
-        android:layout_marginStart="51dp"
+        android:layout_marginStart="47dp"
         android:layout_marginTop="23dp"
         app:layout_constraintStart_toEndOf="@+id/switch6"
         app:layout_constraintTop_toBottomOf="@+id/imageView5"
