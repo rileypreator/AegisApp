@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
 
         ChangeBounds transition = new ChangeBounds();
         transition.setInterpolator(new AnticipateInterpolator(1.0f));
-        transition.setDuration(1000);
+        transition.setDuration(750);
 
         TransitionManager.beginDelayedTransition(ccl, transition);
         constraintSet.applyTo(ccl);
