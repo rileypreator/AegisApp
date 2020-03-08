@@ -11,7 +11,7 @@ public class OptionsPresenter {
 
     }
 
-    public void saveSharedPreferences(String url) {
+    public void saveSharedPreferences(String key, String address) {
         // Code borrowed from https://www.geeksforgeeks.org/shared-preferences-in-android-with-examples/
         // Storing data into SharedPreferences
         SharedPreferences sharedPreferences = activity.getSharedPreferences("MySharedPref",
@@ -19,7 +19,7 @@ public class OptionsPresenter {
 
         // Creating an Editor object to edit(write to the file)
         SharedPreferences.Editor myEdit = sharedPreferences.edit();
-        myEdit.putString("INCOGNITO_URL", url);
+        myEdit.putString(key, address);
         myEdit.commit();
 
         // Run a toast on the UI thread
