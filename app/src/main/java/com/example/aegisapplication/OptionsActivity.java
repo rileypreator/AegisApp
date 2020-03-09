@@ -145,6 +145,7 @@ public class OptionsActivity extends AppCompatActivity {
         Thread thread1 = new Thread(options, "Get Options");
         thread1.start();
     }
+    
 
     // Initiates Incognito mode to leave app. Can be duplicated for every Activity
     public void startIncognito(View view){
