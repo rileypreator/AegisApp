@@ -2,11 +2,8 @@ package com.example.aegisapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.DialogInterface;
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.Switch;
 
@@ -39,8 +36,9 @@ public class OptionsActivity extends AppCompatActivity {
         five.setOnClickListener(listener);
         six.setOnClickListener(listener);
 
-    }
+        getCurrentOptions();
 
+    }
        View.OnClickListener listener = new View.OnClickListener() {
 
             @Override
@@ -140,20 +138,30 @@ public class OptionsActivity extends AppCompatActivity {
             }
     };
 
+    // This function calls Options Presenter Runnable run() function to get and display current
+    // saved settings.
+    public void getCurrentOptions() {
+        OptionsPresenter options = new OptionsPresenter(this);
+        Thread thread1 = new Thread(options, "Get Options");
+        thread1.start();
+    }
+
     // Initiates Incognito mode to leave app. Can be duplicated for every Activity
     public void startIncognito(View view){
         Incognito i = new Incognito(this);
         i.setIncognitoURL();
     }
 
+    // Saves the Incognito URl as entered by the user
     public void saveIncognitoURL(View view){
         String key = "INCOGNITO_URL";
-        EditText editText = findViewById(R.id.editText);
+        EditText editText = findViewById(R.id.URLinput);
         String incognitoURL = editText.getText().toString();
         OptionsPresenter options = new OptionsPresenter(this);
         options.saveSharedPreferences(key, incognitoURL);
     }
 
+    // Saves the selected APP preference for Incognito
     public void saveAppPreference(String app){
         String key = "APP_PACKAGE";
         OptionsPresenter options = new OptionsPresenter(this);
