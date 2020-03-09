@@ -26,8 +26,14 @@ public class Incognito {
             if(isPackageInstalled(appPackage, pm)){
                 leaveAppApp(appPackage);
             } else if (sh.contains("INCOGNITO_URL")) {
-                url = sh.getString("INCOGNITO_URL", "");
+                try{
+                    url = sh.getString("INCOGNITO_URL", "");
                 leaveAppInternet(url);
+                } catch (Exception e) {
+                    e.printStackTrace();
+                    url = activity.getString(R.string.incognito_web_address);
+                    leaveAppInternet(url);
+                }
             }else {
                 url = activity.getString(R.string.incognito_web_address);
                 leaveAppInternet(url);

@@ -2,10 +2,13 @@ package com.example.aegisapplication;
 
 import android.app.Activity;
 import android.content.SharedPreferences;
+import android.widget.Switch;
+import android.widget.TextView;
 import android.widget.Toast;
 
-public class OptionsPresenter {
+public class OptionsPresenter implements Runnable {
     Activity activity;
+
     public OptionsPresenter(Activity activity){
         this.activity = activity;
 
@@ -32,4 +35,53 @@ public class OptionsPresenter {
             });
     }
     }
-}
+    //The run() function below gets settings info from Shared Preference and fills in the Options
+    // menu with the currently saved information. This will allow the user to easily see what
+    // preferences are currently saved.
+    @Override
+    public void run() {
+        SharedPreferences sh = activity.getSharedPreferences("MySharedPref", activity.MODE_PRIVATE);
+        if (sh.contains("APP_PACKAGE")) {
+            final String appPackage = sh.getString("APP_PACKAGE", "");
+        if (sh.contains("INCOGNITO_URL")){
+            final String url = sh.getString("INCOGNITO_URL", "");
+        activity.runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                switch(appPackage){
+                    case "com.spotify.music":
+                        Switch one = activity.findViewById(R.id.switch1);
+                        one.setChecked(true);
+                        break;
+                    case "com.twitter.android":
+                        Switch two = activity.findViewById(R.id.switch2);
+                        two.setChecked(true);
+                        break;
+                    case "com.google.android.youtube":
+                        Switch three = activity.findViewById(R.id.switch3);
+                        three.setChecked(true);
+                        break;
+                    case "com.instagram.android":
+                        Switch four = activity.findViewById(R.id.switch4);
+                        four.setChecked(true);
+                        break;
+                    case "com.facebook.katana":
+                        Switch five = activity.findViewById(R.id.switch5);
+                        five.setChecked(true);
+                        break;
+                    case "com.pinterest":
+                        Switch six = activity.findViewById(R.id.switch6);
+                        six.setChecked(true);
+                        break;
+                }
+                    if (url != ""){
+                        TextView text = activity.findViewById(R.id.URLinput);
+                        text.setText(url);
+                    }
+            }
+            });
+        }
+    }
+}}
+
+
