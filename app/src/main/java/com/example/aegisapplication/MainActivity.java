@@ -66,4 +66,5 @@ public class MainActivity extends AppCompatActivity {
         Intent i = new Intent(this, OptionsActivity.class);
         startActivity(i);
     }
+
 }

@@ -208,5 +208,6 @@
     <string name="select_an_app_for_incognito_mode">Select an app for Incognito mode</string>
     <string name="no">No</string>
     <string name="yes">Yes</string>
+    <string name="settings_button">Settings</string>
 
 </resources>
