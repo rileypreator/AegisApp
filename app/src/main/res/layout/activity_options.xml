@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFFFFF"
     tools:context=".OptionsActivity">
 
     <ImageButton
@@ -27,8 +28,10 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="160dp"
         android:layout_marginTop="20dp"
+        android:fontFamily="@font/curve_thin"
         android:onClick="saveIncognitoURL"
         android:text="@string/update"
+        android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/URLinput" />
 
@@ -39,7 +42,9 @@
         android:layout_marginStart="12dp"
         android:layout_marginTop="34dp"
         android:ems="10"
+        android:fontFamily="@font/curve_thin"
         android:text="http://"
+        android:textColor="@android:color/black"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView10" />
 
@@ -51,7 +56,9 @@
         android:layout_marginTop="15dp"
         android:text="@string/options"
         android:textAlignment="center"
+        android:fontFamily="@font/curve_thin"
         android:textSize="30sp"
+        android:textColor="@android:color/black"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -178,11 +185,14 @@
 
     <TextView
         android:id="@+id/textView8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="100dp"
-        android:layout_marginTop="11dp"
+        android:layout_width="286dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/curve_thin"
         android:text="@string/select_an_app_for_incognito_mode"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
@@ -193,7 +203,10 @@
         android:layout_marginStart="122dp"
         android:layout_marginTop="40dp"
         android:layout_marginEnd="123dp"
+        android:fontFamily="@font/curve_thin"
         android:text="@string/or_enter_your_own_website"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView6" />
