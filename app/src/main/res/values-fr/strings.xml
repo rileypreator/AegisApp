@@ -37,15 +37,15 @@
     </string-array>
 
     <!-- Verbal abuse definition and resources -->
-    <string name="verbal_definition">El uso indebido y excesivo repetido del lenguaje para humillar a alguien o socavar la dignidad de alguien.</string>
+    <string name="verbal_definition">L’utilisation répétée et abusive de la langue pour         humilier quelqu\'un, ou porter atteinte à sa dignité.</string>
     <string name="verbal_other_1">https://dayoneservices.org/salir-del-sitio-rapidamente/</string>
-    <string name="verbal_other_1_name">Dayone Services: Abuso Verbal</string>
+    <string name="verbal_other_1_name">Dayone Services: Violence Verbale</string>
     <string name="verbal_other_2">https://www.psychologytoday.com/us/blog/the-mysteries-love/201612/the-most-effective-way-put-end-verbal-abuse</string>
-    <string name="verbal_other_2_name">Psychology Today: Poner Fin al Abuso Verbal</string>
+    <string name="verbal_other_2_name">Psychology Today: Mettre fin à la violence verbale</string>
     <string name="verbal_self_1">https://www.seleni.org/advice-support/2018/3/20/are-you-being-verbally-abused</string>
-    <string name="verbal_self_1_name">¿Estás Siendo Abusada Verbalmente?</string>
+    <string name="verbal_self_1_name">Êtes-vous victime de violence verbale?</string>
     <string name="verbal_self_2">https://esme.com/resources/domestic-violence/what-should-i-do-if-i-am-a-victim-of-verbal-abuse</string>
-    <string name="verbal_self_2_name">Abuso Verbal: Qué Hacer</string>
+    <string name="verbal_self_2_name">Violence verbale: que faire</string>
 
     <!-- Mental resources array -->
     <string-array name="mental_forMe">
@@ -177,7 +177,7 @@
     <string name="begin_button">Commencer</string>
     <string name="safety_alert">Alerte de sécurité: l\'utilisation du téléphone portable peut être surveillée et il est impossible de la supprimer complètement. Si vous craignez que votre utilisation d\'Internet ne soit surveillée, appelez la hotline nationale contre la violence domestique au 1-800-799−7233. Vous pouvez rapidement utiliser le bouton de navigation privée sur le bouton pour modifier rapidement les applications ou les sites Web.</string>
     <string name="emergency_prompt">Est-ce une urgence?</string>
-    <string name="yes">Si</string>
+    <string name="yes">Oui</string>
     <string name="no">Non</string>
     <string name="call_tollfree">APPEL NUMÉRO VERT</string>
     <string name="call_tollfree_tty">TTY APPEL NUMÉRO VERT</string>
