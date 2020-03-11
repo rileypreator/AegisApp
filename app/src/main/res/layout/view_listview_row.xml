@@ -23,5 +23,5 @@
         android:layout_height="wrap_content"
         android:layout_gravity="right"
         android:onClick="getWebUrl"
-        android:text="Click Me" />
+        android:text="@string/go" />
 </LinearLayout>

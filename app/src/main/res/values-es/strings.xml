@@ -176,5 +176,37 @@
     <string name="incognito_button">Botón para Incognito</string>
     <string name="begin_button">Empezar</string>
     <string name="safety_alert">Aviso de Seguridad: Su computadora podría estar siendo monitoreada y es imposible borrar completamente el historial de sitios en internet que ha visitado. Si tiene temor de que alguien podría estar monitoreando su uso del internet, llame a la Línea Telefónica de Ayuda contra la Violencia Doméstica marcando el número de teléfono 1−800−799−7233 o el número TTY (línea telefónica de texto para personas con problemas de la audición y del habla) 1−800−787−3224. Puede usar rápidamente el botón de incógnito en la parte inferior para cambiar rápidamente aplicaciones o sitios web.</string>
+    <string name="emergency_prompt">¿Es esto una emergencia?</string>
+    <string name="yes">Si</string>
+    <string name="no">No</string>
+    <string name="call_tollfree">LLAME GRATIS</string>
+    <string name="call_tollfree_tty">TTY - LLAME GRATIS</string>
+    <string name="chat_247">CHAT - DISPONIBLE 24/7</string>
+    <string name="textline">Línea de Texto de Crisis</string>
+    <string name="spotify_app">com.spotify.music</string>
+    <string name="twitter_app">com.twitter.android</string>
+    <string name="update">Actualizar</string>
+    <string name="youtube_app">com.google.android.youtube</string>
+    <string name="pinterest_app">com.pinterest</string>
+    <string name="select_an_app_for_incognito_mode">Seleccione una aplicación para el modo de Incógnito</string>
+    <string name="options">Opciones</string>
+    <string name="or_enter_your_own_website">O ingrese su propio sitio web</string>
+    <string name="instagram_app">com.instagram.android</string>
+    <string name="incognito_website">Sitio Web de Incógnito</string>
+    <string name="incognito_function">función de incógnito</string>
+    <string name="hotline_name">La Línea Directa Nacional de Violencia Doméstica</string>
+    <string name="facebook_app">com.facebook.katana</string>
+    <string name="start_text">COMIENCE LA CONVERSACIÓN DE TEXTO</string>
+    <string name="abuse_information">Recursos de Información Sobre Abuso</string>
+    <string name="go_now">VE AHORA</string>
+    <string name="audience">¿Es esto para ti o para alguien más?</string>
+    <string name="for_me">PARA MI</string>
+    <string name="for_friend">PARA ALGUIEN MÁS</string>
+    <string name="resources">RECURSOS</string>
+    <string name="physical">Física</string>
+    <string name="sexual">Sexual</string>
+    <string name="verbal">Verbal</string>
+    <string name="mental">Emocional / Mental</string>
+    <string name="go">VAMOS</string>
 
 </resources>

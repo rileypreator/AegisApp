@@ -44,7 +44,6 @@ public class SchoolAdapter extends BaseAdapter {
 
         // Set the title and button name
         txtSchoolTitle.setText(mArrSchoolData.get(position));
-        btnAction.setText("Go");
 
         final int position2 = position;
 
