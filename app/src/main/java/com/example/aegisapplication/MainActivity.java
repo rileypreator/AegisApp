@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
 
         ChangeBounds transition = new ChangeBounds();
         transition.setInterpolator(new AnticipateInterpolator(1.0f));
-        transition.setDuration(1000);
+        transition.setDuration(750);
 
         TransitionManager.beginDelayedTransition(ccl, transition);
         constraintSet.applyTo(ccl);
@@ -67,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
     // Initiates Incognito mode to leave app. Can be duplicated for every Activity
     public void startIncognito(View view){
         Incognito i = new Incognito(this);
-        i.leaveApp();
+        i.setIncognitoURL();
     }
 
     public void goToOptions(View view){

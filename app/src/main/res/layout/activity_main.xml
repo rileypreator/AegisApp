@@ -8,22 +8,14 @@
     android:background="#FFFFFF"
     tools:context=".MainActivity">
 
-
-    <ImageView
-        android:id="@+id/background"
-        android:layout_width="411dp"
-        android:layout_height="731dp"
-        android:contentDescription="@string/aegis_background"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/aegis_main_activity_background" />
-
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="60dp"
 
+        android:layout_marginStart="30dp"
         android:layout_marginTop="5dp"
+        android:layout_marginEnd="30dp"
         android:background="@drawable/button_shape"
         android:fontFamily="@font/curve_thin"
         android:onClick="sendBegin"
@@ -36,7 +28,17 @@
         android:textSize="45sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/background" />
+        app:layout_constraintTop_toBottomOf="@+id/openingWelcomeConstraint" />
+
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="448dp"
+        android:layout_height="771dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/aegis_background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/aegis_main_activity_background" />
 
     <ImageButton
         android:id="@+id/incognitoButton"
@@ -45,13 +47,13 @@
         android:layout_height="60dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        android:background="@null"
+        android:background="@drawable/incognito_wings_background"
         android:contentDescription="incognito function"
         android:onClick="startIncognito"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@mipmap/incognito_wings_foreground" />
+        app:srcCompat="@mipmap/incognito_wings" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/openingWelcomeConstraint"

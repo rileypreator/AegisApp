@@ -160,8 +160,7 @@ Activity activity = this;
     // Initiates Incognito mode to leave app. Can be duplicated for every Activity
     public void startIncognito(View view){
         Incognito i = new Incognito(this);
-        i.leaveApp();
-
+        i.setIncognitoURL();
     }
 
     public void goToOptions(View view){

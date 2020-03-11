@@ -7,6 +7,15 @@
     <string name="web_button1">Website_1</string>
     <string name="web_address1">http:www.instagram.com</string>
     <string name="incognito_web_address">https://www.instagram.com/pickersstickers/</string>
+
+    <!-- Incognito app packages -->
+    <string name="youtube_app">com.google.android.youtube</string>
+    <string name="pinterest_app">com.pinterest</string>
+    <string name="facebook_app">com.facebook.katana</string>
+    <string name="twitter_app">com.twitter.android</string>
+    <string name="instagram_app">com.instagram.android</string>
+    <string name="spotify_app">com.spotify.music</string>
+
     <!-- Contact Resources -->
     <string name="hotline_call">1-800-799-7233</string>
     <string name="hotline_TTY_call">1-800-787-3224</string>
@@ -193,5 +202,13 @@
     <string name="incognito_button">Button for Incognito</string>
     <string name="begin_button">Begin</string>
     <string name="safety_alert">Safety Alert: Mobile phone use can be monitored and is impossible to completely clear. If you are afraid your internet usage might be monitored, call the National Domestic Violence Hotline at 1−800−799−7233. You can quickly use the Incognito Button at the botton to quickly change applications or websites.</string>
+    <string name="incognito_website">Incognito Website</string>
+    <string name="options">Options</string>
+    <string name="update">update</string>
+    <string name="incognito_function">incognito function</string>
+    <string name="or_enter_your_own_website">Or enter your own website</string>
+    <string name="select_an_app_for_incognito_mode">Select an app for Incognito mode</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
 
 </resources>
