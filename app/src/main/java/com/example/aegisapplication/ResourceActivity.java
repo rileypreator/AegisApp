@@ -22,7 +22,7 @@ String resource_type;
 String [] resources;
 String [] resources_names;
 Spinner abuseTypeSpinner;
-String [] abuseTypes = {"Physical","Sexual","Verbal","Emotional/Mental"};
+String [] abuseTypes;
 String whereToGoNext;
 Context context = this;
 Activity activity = this;
@@ -35,6 +35,7 @@ Activity activity = this;
         Intent intent = getIntent();
         isForMe = intent.getBooleanExtra("audience_type", true);
         resource_type = intent.getStringExtra("resource_type");
+        abuseTypes = getApplicationContext().getResources().getStringArray(R.array.abuse_types);
 
         ArrayAdapter<String> adapter2;
 
@@ -81,7 +82,7 @@ Activity activity = this;
                 // Get select item
                 int sid=abuseTypeSpinner.getSelectedItemPosition();
 
-                if (abuseTypes[sid] == "Physical") {
+                if (abuseTypes[sid] == abuseTypes[0]) {
                     whereToGoNext = "physical";
                     if(isForMe) {
                         resources_names = getResources().getStringArray(R.array.physical_forMe_names);
@@ -92,7 +93,7 @@ Activity activity = this;
                         resources = getResources().getStringArray(R.array.physical_forSomeoneElse);
                     }
                 }
-                else if (abuseTypes[sid] == "Sexual") {
+                else if (abuseTypes[sid] == abuseTypes[1]) {
                     whereToGoNext = "sexual";
                     if(isForMe) {
                         resources = getResources().getStringArray(R.array.sexual_forMe);
@@ -103,7 +104,7 @@ Activity activity = this;
                         resources_names = getResources().getStringArray(R.array.sexual_forSomeoneElse_names);
                     }
                 }
-                else if (abuseTypes[sid] == "Verbal") {
+                else if (abuseTypes[sid] == abuseTypes[2]) {
                     whereToGoNext = "verbal";
                     if(isForMe) {
                         resources = getResources().getStringArray(R.array.verbal_forMe);
@@ -114,7 +115,7 @@ Activity activity = this;
                         resources_names = getResources().getStringArray(R.array.verbal_forSomeoneElse_names);
                     }
                 }
-                else if (abuseTypes[sid] == "Emotional/Mental") {
+                else if (abuseTypes[sid] == abuseTypes[3]) {
                     whereToGoNext = "mental";
                     if(isForMe) {
                         resources = getResources().getStringArray(R.array.mental_forMe);

@@ -14,7 +14,7 @@ import android.widget.TextView;
 public class InformationActivity extends AppCompatActivity {
 boolean isForMe;
 Spinner abuseTypeSpinner;
-String [] abuseTypes = {"Physical","Sexual","Verbal","Emotional/Mental"};
+String [] abuseTypes;
 String whereToGoNext;
 
     @Override
@@ -23,6 +23,7 @@ String whereToGoNext;
         setContentView(R.layout.activity_information);
         Intent intent = getIntent();
         isForMe = intent.getBooleanExtra("isForMe", true);
+        abuseTypes = getResources().getStringArray(R.array.abuse_types);
 
 
         // Get reference of SpinnerView from layout/main_activity.xml
@@ -41,22 +42,22 @@ String whereToGoNext;
                 // Get select item
                 int sid=abuseTypeSpinner.getSelectedItemPosition();
 
-                if (abuseTypes[sid] == "Physical") {
+                if (abuseTypes[sid] == abuseTypes[0]) {
                     whereToGoNext = "physical";
                     TextView textView = findViewById(R.id.textView4);
                     textView.setText(R.string.physical_definition);
                 }
-                else if (abuseTypes[sid] == "Sexual") {
+                else if (abuseTypes[sid] == abuseTypes[1]) {
                     whereToGoNext = "sexual";
                     TextView textView = findViewById(R.id.textView4);
                     textView.setText(R.string.sexual_definition);
                 }
-                else if (abuseTypes[sid] == "Verbal") {
+                else if (abuseTypes[sid] == abuseTypes[2]) {
                     whereToGoNext = "verbal";
                     TextView textView = findViewById(R.id.textView4);
                     textView.setText(R.string.verbal_definition);
                 }
-                else if (abuseTypes[sid] == "Emotional/Mental") {
+                else if (abuseTypes[sid] == abuseTypes[3]) {
                     whereToGoNext = "mental";
                     TextView textView = findViewById(R.id.textView4);
                     textView.setText(R.string.mental_definition);
@@ -64,7 +65,9 @@ String whereToGoNext;
             }
             @Override
             public void onNothingSelected(AdapterView<?> parent) {
-               whereToGoNext = "physical";
+                whereToGoNext = "physical";
+                TextView textView = findViewById(R.id.textView4);
+                textView.setText(R.string.physical_definition);
             }
         });
     }
