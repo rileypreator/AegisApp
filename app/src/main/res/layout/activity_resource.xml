@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background = "@mipmap/full_temple_background"
+    android:background = "#FFFFFF"
     tools:context=".ResourceActivity">
 
     <ImageButton
@@ -38,6 +38,8 @@
         android:layout_width="250dp"
         android:layout_height="36dp"
         android:layout_marginTop="64dp"
+        android:spinnerMode="dropdown"
+        android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"

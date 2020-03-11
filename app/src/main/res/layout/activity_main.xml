@@ -13,9 +13,8 @@
         android:layout_width="wrap_content"
         android:layout_height="60dp"
 
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginEnd="30dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="50dp"
         android:background="@drawable/button_shape"
         android:fontFamily="@font/curve_thin"
         android:onClick="sendBegin"
@@ -26,7 +25,6 @@
         android:text="@string/begin_button"
         android:textColor="#FFFFFF"
         android:textSize="45sp"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/openingWelcomeConstraint" />
 
@@ -38,7 +36,7 @@
         android:contentDescription="@string/aegis_background"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/aegis_main_activity_background" />
+        app:srcCompat="@drawable/aegis_temple" />
 
     <ImageButton
         android:id="@+id/incognitoButton"
@@ -47,13 +45,13 @@
         android:layout_height="60dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        android:background="@drawable/incognito_wings_background"
+        android:background="@null"
         android:contentDescription="incognito function"
         android:onClick="startIncognito"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@mipmap/incognito_wings" />
+        app:srcCompat="@mipmap/incognito_wings_foreground" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/openingWelcomeConstraint"

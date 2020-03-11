@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFFFFF"
     tools:context=".SurveyActivity">
 
     <Button
@@ -12,17 +13,35 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="56dp"
         android:onClick="onSomeoneElseClick"
+        android:fontFamily="@font/curve_thin"
+        android:textSize="36dp"
         android:text="@string/for_friend"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button2" />
 
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="465dp"
+        android:layout_height="761dp"
+        android:contentDescription="@string/aegis_background"
+        android:duplicateParentState="true"
+        android:paddingLeft="-50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/pillars_narrow" />
+
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="230dp"
+        android:layout_height="109dp"
         android:layout_marginTop="150dp"
         android:text="@string/audience"
+        android:fontFamily="@font/curve_thin"
+        android:lineSpacingExtra="14sp"
+        android:textAlignment="center"
+        android:textColor="@color/lightBlueAccent"
+        android:textSize="36sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -34,6 +53,8 @@
         android:layout_marginTop="87dp"
         android:onClick="onMyselfClick"
         android:text="@string/for_me"
+        android:fontFamily="@font/curve_thin"
+        android:textSize="36sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
@@ -54,7 +75,7 @@
         app:srcCompat="@mipmap/incognito_wings_foreground" />
 
     <Button
-        android:id="@+id/button13"
+        android:id="@+id/options"
         android:layout_width="35dp"
         android:layout_height="35dp"
         android:layout_marginTop="10dp"
