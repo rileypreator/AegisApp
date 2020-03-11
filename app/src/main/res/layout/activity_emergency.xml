@@ -4,49 +4,67 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFFFFF"
     tools:context=".EmergencyActivity">
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Is this an emergency?"
+        android:layout_width="205dp"
+        android:layout_height="138dp"
+        android:fontFamily="@font/curve_thin"
+        android:lineSpacingExtra="24sp"
+        android:text="@string/is_this_an_emergency"
+        android:textAlignment="center"
+        android:textColor="@android:color/primary_text_light_nodisable"
+        android:textSize="50sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.262" />
+        app:layout_constraintVertical_bias="0.246" />
+
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="465dp"
+        android:layout_height="761dp"
+        android:contentDescription="@string/aegis_background"
+        android:duplicateParentState="true"
+        android:paddingLeft="-50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/pillars_narrow" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="149dp"
-        android:layout_marginEnd="174dp"
-        android:layout_marginBottom="297dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="164dp"
+        android:fontFamily="@font/curve_thin"
         android:onClick="onEmergencyClick"
         android:text="@string/yes"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:textSize="36sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/textView" />
 
     <Button
         android:id="@+id/button3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="149dp"
+        android:layout_marginStart="160dp"
         android:layout_marginTop="57dp"
-        android:layout_marginEnd="174dp"
         android:layout_marginBottom="192dp"
+        android:fontFamily="@font/curve_thin"
         android:onClick="onNonEmergencyClick"
         android:text="@string/no"
+        android:textSize="36sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        app:layout_constraintVertical_bias="0.05" />
 
     <ImageButton
         android:id="@+id/incognitoButton"

@@ -4,7 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFFFFF"
     tools:context=".InformationActivity">
+
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="465dp"
+        android:layout_height="761dp"
+        android:contentDescription="@string/aegis_background"
+        android:duplicateParentState="true"
+        android:paddingLeft="-50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/pillars_narrow" />
 
     <ImageButton
         android:id="@+id/incognitoButton"
@@ -48,6 +60,8 @@
         android:layout_marginTop="12dp"
         android:onClick="onClickResources"
         android:text="Resources"
+        android:fontFamily="@font/curve_thin"
+        android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"

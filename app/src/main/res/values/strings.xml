@@ -208,5 +208,9 @@
     <string name="select_an_app_for_incognito_mode">Select an app for Incognito mode</string>
     <string name="no">No</string>
     <string name="yes">Yes</string>
+    <string name="is_this_an_emergency">Is this an EMERGENCY?</string>
+    <string name="is_this_for_you_or_someone_else">Is this for you or someone else?</string>
+    <string name="for_me">For Me</string>
+    <string name="for_someone_else">For Someone Else</string>
 
 </resources>
