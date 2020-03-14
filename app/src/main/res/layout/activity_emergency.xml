@@ -20,9 +20,10 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="374dp"
-        android:layout_height="62dp"
-        android:background="#FFFFFF"
+        android:layout_width="393dp"
+        android:layout_height="73dp"
+        android:height="100dp"
+        android:background="#66FFFFFF"
         android:fontFamily="@font/curve_thin"
         android:lineSpacingExtra="24sp"
         android:paddingLeft="5dp"
@@ -43,10 +44,10 @@
         app:layout_constraintVertical_bias="0.246" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/yesButton"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
-        android:layout_marginTop="96dp"
+        android:layout_marginTop="116dp"
         android:layout_marginEnd="164dp"
         android:fontFamily="@font/curve_thin"
         android:onClick="onEmergencyClick"
@@ -56,20 +57,22 @@
         app:layout_constraintTop_toBottomOf="@id/textView" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/noButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="160dp"
         android:layout_marginTop="57dp"
+        android:layout_marginEnd="160dp"
         android:layout_marginBottom="192dp"
         android:fontFamily="@font/curve_thin"
         android:onClick="onNonEmergencyClick"
         android:text="@string/no"
         android:textSize="36sp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/background"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button"
-        app:layout_constraintVertical_bias="0.05" />
+        app:layout_constraintTop_toBottomOf="@+id/yesButton" />
 
     <ImageButton
         android:id="@+id/incognitoButton"

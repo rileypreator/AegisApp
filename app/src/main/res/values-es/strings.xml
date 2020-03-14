@@ -1,0 +1,212 @@
+<resources>
+    <string name="app_name">Aegis Application</string>
+    <string name="options_english">Inglés</string>
+    <string name="options_spanish">Español</string>
+    <string name="enter_name">Ingrese Su Nombre</string>
+    <string name="button_submit">Botón de Enviar</string>
+    <string name="web_button1">Website_1</string>
+    <string name="web_address1">http:www.instagram.com</string>
+    <string name="incognito_web_address">https://www.instagram.com/pickersstickers/</string>
+    <!-- Contact Resources -->
+    <string name="hotline_call">1-800-799-7233</string>
+    <string name="hotline_TTY_call">1-800-799-7233</string>
+    <string name="chat_url">https://ndvh.secure.force.com/resources/LiveAgentPreChat?endpoint=https%3A%2F%2Fzq4.la4-c3-ph2.salesforceliveagent.com%2Fcontent%2Fs%2Fchat%3Flanguage%3Des%23deployment_id%3D5722A000000PBnZ%26org_id%3D00DF00000006ovk%26button_id%3D5732A000000PC5S%26session_id%3Dd019d2d8-b715-4b23-ae16-efa5cc0ed6c1\u0026language=spanish</string>
+
+    <!-- Verbal resource array -->
+    <string-array name="verbal_forMe">
+        <item>@string/verbal_self_1</item>
+        <item>@string/verbal_self_2</item>
+    </string-array>
+
+    <!-- Verbal resource array -->
+    <string-array name="verbal_forSomeoneElse">
+        <item>@string/verbal_other_1</item>
+        <item>@string/verbal_other_2</item>
+    </string-array>
+
+    <!-- Verbal resource array -->
+    <string-array name="verbal_forMe_names">
+        <item>@string/verbal_self_1_name</item>
+        <item>@string/verbal_self_2_name</item>
+    </string-array>
+
+    <!-- Verbal resource array -->
+    <string-array name="verbal_forSomeoneElse_names">
+        <item>@string/verbal_other_1_name</item>
+        <item>@string/verbal_other_2_name</item>
+    </string-array>
+
+    <!-- Verbal abuse definition and resources -->
+    <string name="verbal_definition">El uso indebido y excesivo repetido del lenguaje para humillar a alguien o socavar la dignidad de alguien.</string>
+    <string name="verbal_other_1">https://dayoneservices.org/salir-del-sitio-rapidamente/</string>
+    <string name="verbal_other_1_name">Dayone Services: Abuso Verbal</string>
+    <string name="verbal_other_2">https://www.psychologytoday.com/us/blog/the-mysteries-love/201612/the-most-effective-way-put-end-verbal-abuse</string>
+    <string name="verbal_other_2_name">Psychology Today: Poner Fin al Abuso Verbal</string>
+    <string name="verbal_self_1">https://www.seleni.org/advice-support/2018/3/20/are-you-being-verbally-abused</string>
+    <string name="verbal_self_1_name">¿Estás Siendo Abusada Verbalmente?</string>
+    <string name="verbal_self_2">https://esme.com/resources/domestic-violence/what-should-i-do-if-i-am-a-victim-of-verbal-abuse</string>
+    <string name="verbal_self_2_name">Abuso Verbal: Qué Hacer</string>
+
+    <!-- Mental resources array -->
+    <string-array name="mental_forMe">
+        <item>@string/mental_self_1</item>
+        <item>@string/mental_self_2</item>
+    </string-array>
+
+    <!-- Mental resources array -->
+    <string-array name="mental_forSomeoneElse">
+        <item>@string/mental_other_1</item>
+        <item>@string/mental_other_2</item>
+        <item>@string/mental_other_3</item>
+    </string-array>
+
+    <!-- Mental resources array -->
+    <string-array name="mental_forMe_names">
+        <item>@string/mental_self_1_name</item>
+        <item>@string/mental_self_2_name</item>
+    </string-array>
+
+    <!-- Mental resources array -->
+    <string-array name="mental_forSomeoneElse_names">
+        <item>@string/mental_other_1_name</item>
+        <item>@string/mental_other_2_name</item>
+        <item>@string/mental_other_3_name</item>
+    </string-array>
+
+    <!-- Mental and Emotional abuse definition and resources -->
+    <string name="mental_definition">Involucra los intentos de una persona de asustarte, controlarte o aislarte. Está en las palabras y acciones del abusador, así como en su persistencia en estos comportamientos para torcer y retorcer la realidad de una víctima para obtener el control de ellos. El abusador usa el miedo, la humillación o la agresión verbal para socavar la autoestima de la víctima.</string>
+    <string name="mental_other_1">https://www.healthline.com/health/child-neglect-and-psychological-abuse</string>
+    <string name="mental_other_1_name">Abuso Psicológico</string>
+    <string name="mental_other_2">https://bandbacktogether.com/master-resource-links-2/abuse-resources/emotional-abuse-resources/</string>
+    <string name="mental_other_2_name">Recursos de Abuso Emocional</string>
+    <string name="mental_other_3">https://www.healthline.com/health/signs-of-mental-abuse</string>
+    <string name="mental_other_3_name">Señales de Abuso Mental</string>
+    <string name="mental_self_1">https://www.thehotline.org/is-this-abuse/​</string>
+    <string name="mental_self_1_name">¿Es Este Abuso?</string>
+    <string name="mental_self_2">https://espanol.thehotline.org/</string>
+    <string name="mental_self_2_name">La Línea Nacional Contra la Violencia Doméstica</string>
+
+    <!-- Physical resources array -->
+    <string-array name="physical_forMe">
+        <item>@string/physical_self_1</item>
+        <item>@string/physical_self_2</item>
+        <item>@string/physical_self_3</item>
+    </string-array>
+
+    <!-- Physical resources array -->
+    <string-array name="physical_forSomeoneElse">
+        <item>@string/physical_other_1</item>
+        <item>@string/physical_other_2</item>
+    </string-array>
+
+    <!-- Physical resources array -->
+    <string-array name="physical_forMe_names">
+        <item>@string/physical_self_1_name</item>
+        <item>@string/physical_self_2_name</item>
+        <item>@string/physical_self_3_name</item>
+    </string-array>
+
+    <!-- Physical resources array -->
+    <string-array name="physical_forSomeoneElse_names">
+        <item>@string/physical_other_1_name</item>
+        <item>@string/physical_other_2_name</item>
+    </string-array>
+
+    <!-- Physical abuse definition and resources -->
+    <string name="physical_definition">La violencia doméstica incluye comportamientos que dañan físicamente, despiertan miedo, evitan que una pareja haga lo que desean o los obligan a comportarse de la manera que no quieren. Incluye el uso de violencia física y sexual, amenazas e intimidación, abuso emocional y privación económica. Muchas de estas formas diferentes de violencia doméstica / abuso pueden ocurrir en cualquier momento dentro de la misma relación íntima.</string>
+    <string name="physical_other_1">https://www.thehotline.org/help/help-for-friends-and-family/</string>
+    <string name="physical_other_1_name">Ayuda para Familiares y Amigas</string>
+    <string name="physical_other_2">https://www.verywellmind.com/how-to-help-a-victim-of-domestic-violence-66533</string>
+    <string name="physical_other_2_name">Cómo Ayudar a las Víctimas de Violencia Doméstica</string>
+    <string name="physical_self_1">https://www.thehotline.org/help/path-to-safety/</string>
+    <string name="physical_self_1_name">El Camino a la Seguridad</string>
+    <string name="physical_self_2">https://www.helpguide.org/articles/abuse/getting-out-of-an-abusive-relationship.html</string>
+    <string name="physical_self_2_name">Salir de Una Relación Abusiva</string>
+    <string name="physical_self_3">https://familycrisiscenter.wixsite.com/familycrisiscenter/domestic-violence</string>
+    <string name="physical_self_3_name">Violencia Doméstica</string>
+
+    <!-- Sexual resource array -->
+    <string-array name="sexual_forMe">
+        <item>@string/sexual_self_1</item>
+        <item>@string/sexual_self_2</item>
+        <item>@string/sexual_self_3</item>
+    </string-array>
+
+    <!-- Sexual resource array -->
+    <string-array name="sexual_forSomeoneElse">
+        <item>@string/sexual_other_1</item>
+        <item>@string/sexual_other_2</item>
+        <item>@string/sexual_other_3</item>
+        <item>@string/sexual_other_4</item>
+    </string-array>
+
+    <!-- Sexual resource array -->
+    <string-array name="sexual_forMe_names">
+        <item>@string/sexual_self_1_name</item>
+        <item>@string/sexual_self_2_name</item>
+        <item>@string/sexual_self_3_name</item>
+    </string-array>
+
+    <!-- Sexual resource array -->
+    <string-array name="sexual_forSomeoneElse_names">
+        <item>@string/sexual_other_1_name</item>
+        <item>@string/sexual_other_2_name</item>
+        <item>@string/sexual_other_3_name</item>
+        <item>@string/sexual_other_4_name</item>
+    </string-array>
+
+    <!-- Sexual abuse definition and resources -->
+    <string name="sexual_definition">Agresión sexual: un acto en el que una persona toca intencionalmente sexualmente a otra persona sin el consentimiento de esa persona, o coacciona o obliga físicamente a una persona a participar en un acto sexual contra su voluntad. Violación: un tipo de agresión sexual iniciada por una o más personas contra otra persona sin el consentimiento de esa persona. El acto puede llevarse a cabo por la fuerza física, o donde la persona está bajo amenaza o manipulación, o con una persona que es incapaz de un consentimiento válido.</string>
+    <string name="sexual_other_1">https://www.womenslaw.org/about-abuse/helping-others/family-friends-and-co-workers</string>
+    <string name="sexual_other_1_name">Ayudando a la Familia, Amigos y Compañeros de Trabajo</string>
+    <string name="sexual_other_2">https://www.rainn.org/articles/tips-talking-survivors-sexual-assault</string>
+    <string name="sexual_other_2_name">Consejos para Hablar con los Sobrevivientes</string>
+    <string name="sexual_other_3">https://sapac.umich.edu/article/helping-survivor-sexual-assault</string>
+    <string name="sexual_other_3_name">Ayudando a los Sobrevivientes de Agresión Sexual</string>
+    <string name="sexual_other_4">https://www.nytimes.com/2019/02/27/smarter-living/sexual-abuse-assault-support-mental-health.html</string>
+    <string name="sexual_other_4_name">Cómo Apoyar a una Amiga o ser Querido que ha Sido Abusado Sexualmente</string>
+    <string name="sexual_self_1">https://www.helpguide.org/articles/ptsd-trauma/recovering-from-rape-and-sexual-trauma.html</string>
+    <string name="sexual_self_1_name">Recuperándose de la Violación y el Trauma Sexual</string>
+    <string name="sexual_self_2">https://victimconnect.org/tipos-de-delitos/agresion-sexual/?lang=es</string>
+    <string name="sexual_self_2_name">Agresión Sexual</string>
+    <string name="sexual_self_3">https://victimsofcrime.org/help-for-crime-victims/get-help-bulletins-for-crime-victims/bulletins-for-teens/sexual-assault</string>
+    <string name="sexual_self_3_name">Adolescentes y Asalto Secundario</string>
+
+    <string name="aegis_background">Fondo para Aegis</string>
+    <string name="incognito_button">Botón para Incognito</string>
+    <string name="begin_button">Empezar</string>
+    <string name="safety_alert">Aviso de Seguridad: Su computadora podría estar siendo monitoreada y es imposible borrar completamente el historial de sitios en internet que ha visitado. Si tiene temor de que alguien podría estar monitoreando su uso del internet, llame a la Línea Telefónica de Ayuda contra la Violencia Doméstica marcando el número de teléfono 1−800−799−7233 o el número TTY (línea telefónica de texto para personas con problemas de la audición y del habla) 1−800−787−3224. Puede usar rápidamente el botón de incógnito en la parte inferior para cambiar rápidamente aplicaciones o sitios web.</string>
+    <string name="emergency_prompt">¿Es esto una emergencia?</string>
+    <string name="yes">Si</string>
+    <string name="no">No</string>
+    <string name="call_tollfree">LLAME GRATIS</string>
+    <string name="call_tollfree_tty">TTY - LLAME GRATIS</string>
+    <string name="chat_247">CHAT - DISPONIBLE 24/7</string>
+    <string name="textline">Línea de Texto de Crisis</string>
+    <string name="spotify_app">com.spotify.music</string>
+    <string name="twitter_app">com.twitter.android</string>
+    <string name="update">Actualizar</string>
+    <string name="youtube_app">com.google.android.youtube</string>
+    <string name="pinterest_app">com.pinterest</string>
+    <string name="select_an_app_for_incognito_mode">Seleccione una aplicación para el modo de Incógnito</string>
+    <string name="options">Opciones</string>
+    <string name="or_enter_your_own_website">O ingrese su propio sitio web</string>
+    <string name="instagram_app">com.instagram.android</string>
+    <string name="incognito_website">Sitio Web de Incógnito</string>
+    <string name="incognito_function">función de incógnito</string>
+    <string name="hotline_name">La Línea Directa Nacional de Violencia Doméstica</string>
+    <string name="facebook_app">com.facebook.katana</string>
+    <string name="start_text">COMIENCE LA CONVERSACIÓN DE TEXTO</string>
+    <string name="abuse_information">Recursos de Información Sobre Abuso</string>
+    <string name="go_now">VE AHORA</string>
+    <string name="audience">¿Es esto para ti o para alguien más?</string>
+    <string name="for_me">PARA MI</string>
+    <string name="for_friend">PARA ALGUIEN MÁS</string>
+    <string name="resources">RECURSOS</string>
+    <string name="physical">Física</string>
+    <string name="sexual">Sexual</string>
+    <string name="verbal">Verbal</string>
+    <string name="mental">Emocional / Mental</string>
+    <string name="go">VAMOS</string>
+
+</resources>

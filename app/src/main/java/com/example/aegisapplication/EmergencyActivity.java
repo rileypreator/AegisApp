@@ -4,14 +4,22 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 public class EmergencyActivity extends AppCompatActivity {
+
+    public boolean click1;
+    public boolean click2;
+    public boolean click3;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_emergency);
+        click1 = false;
+        click2 = false;
+        click3 = false;
     }
 
     public void onEmergencyClick(View view)
@@ -37,5 +45,27 @@ public class EmergencyActivity extends AppCompatActivity {
     public void goToOptions(View view){
         Intent i = new Intent(this, OptionsActivity.class);
         startActivity(i);
+    }
+
+    public void goToLogin(View view) {
+
+        if (click1 == true && click2 == true && click3 == true) {
+            click1 = false;
+            click2 = false;
+            click3 = false;
+        }
+
+        if (click1 == false)
+            click1 = true;
+        else if (click2 == false)
+            click2 = true;
+        else if (click3 == false) {
+            click3 = true;
+
+            Intent intent = new Intent(this, AdminLoginActivity.class);
+            startActivity(intent);
+        }
+
+
     }
 }
