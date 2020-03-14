@@ -9,7 +9,7 @@
     tools:context=".AdminLoginActivity">
 
     <ImageView
-        android:id="@+id/aegis"
+        android:id="@+id/aegisBackground"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="80dp"
