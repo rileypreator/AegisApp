@@ -13,6 +13,7 @@
         android:usesCleartextTraffic="true"
         >
 
+        <activity android:name=".AdminLoginActivity"></activity>
         <activity android:name=".ContactActivity"></activity>
         <activity android:name=".EmergencyActivity"></activity>
         <activity android:name=".InformationActivity"></activity>

@@ -14,14 +14,17 @@
         android:layout_height="wrap_content"
         android:paddingLeft="2dp"
         android:text="TextView"
+        android:fontFamily="@font/curve_thin"
         android:textColor="@android:color/black"
-        android:textSize="20dp" />
+        android:textSize="30dp" />
 
     <Button
         android:id="@+id/btnAction"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="right"
+        android:fontFamily="@font/curve_thin"
         android:onClick="getWebUrl"
+        android:textSize="30dp"
         android:text="@string/go" />
 </LinearLayout>

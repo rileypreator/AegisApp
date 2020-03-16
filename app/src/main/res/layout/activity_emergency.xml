@@ -7,16 +7,31 @@
     android:background="#FFFFFF"
     tools:context=".EmergencyActivity">
 
-    <TextView
-        android:id="@+id/textView"
-        android:fontFamily="@font/curve_thin"
-        android:lineSpacingExtra="24sp"
-        android:textAlignment="center"
-        android:textColor="@android:color/primary_text_light_nodisable"
-        android:textSize="50sp"
+    <ImageView
+        android:id="@+id/background"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:contentDescription="@string/aegis_background"
+        android:duplicateParentState="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/pillars_narrow" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#66FFFFFF"
+        android:fontFamily="@font/curve_thin"
+        android:lineSpacingExtra="24sp"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="5dp"
         android:text="@string/emergency_prompt"
+        android:textAlignment="center"
+        android:textColor="@android:color/primary_text_light_nodisable"
+        android:textSize="45sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
@@ -26,45 +41,31 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.246" />
 
-    <ImageView
-        android:id="@+id/background"
-        android:layout_width="465dp"
-        android:layout_height="761dp"
-        android:contentDescription="@string/aegis_background"
-        android:duplicateParentState="true"
-        android:paddingLeft="-50dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/pillars_narrow" />
-
     <Button
-        android:id="@+id/button"
+        android:id="@+id/yesButton"
         android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:layout_marginTop="96dp"
-        android:layout_marginEnd="164dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
         android:fontFamily="@font/curve_thin"
         android:onClick="onEmergencyClick"
         android:text="@string/yes"
         android:textSize="36sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/textView" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/noButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="160dp"
-        android:layout_marginTop="57dp"
-        android:layout_marginBottom="192dp"
+        android:layout_marginTop="70dp"
         android:fontFamily="@font/curve_thin"
         android:onClick="onNonEmergencyClick"
         android:text="@string/no"
         android:textSize="36sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button"
-        app:layout_constraintVertical_bias="0.05" />
+        app:layout_constraintEnd_toEndOf="@id/yesButton"
+        app:layout_constraintStart_toStartOf="@id/yesButton"
+        app:layout_constraintTop_toBottomOf="@+id/yesButton" />
 
     <ImageButton
         android:id="@+id/incognitoButton"
@@ -91,5 +92,21 @@
         android:onClick="goToOptions"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/admin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="#00FFFFFF"
+        android:onClick="goToLogin"
+        android:shadowColor="#00FFFFFF"
+        android:shadowRadius="0"
+        android:stateListAnimator="@null"
+        android:text="Button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@string/admin_button" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

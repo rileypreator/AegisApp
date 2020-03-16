@@ -7,8 +7,9 @@
 
     <item>
         <bitmap
-            android:gravity="center"
-            android:src="@drawable/aegis_splash"/>
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/aegis_splash_new"/>
     </item>
 
 </layer-list>

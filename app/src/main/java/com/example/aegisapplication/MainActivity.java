@@ -1,22 +1,17 @@
 package com.example.aegisapplication;
 
-import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.constraintlayout.widget.ConstraintSet;
 
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.Handler;
 import android.transition.ChangeBounds;
 import android.transition.TransitionManager;
-import android.view.Gravity;
-import android.view.LayoutInflater;
 import android.view.View;
 import android.view.animation.AnticipateInterpolator;
 import android.widget.Button;
-import android.widget.PopupWindow;
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -30,9 +25,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         moveAlert = findViewById(R.id.closeWelcome);
-
-        Button button2;
-
         ccl = findViewById(R.id.mainLayout);
 
         moveAlert.setOnClickListener((new View.OnClickListener() {
@@ -74,4 +66,5 @@ public class MainActivity extends AppCompatActivity {
         Intent i = new Intent(this, OptionsActivity.class);
         startActivity(i);
     }
+
 }

@@ -7,6 +7,16 @@
     android:background = "#FFFFFF"
     tools:context=".ResourceActivity">
 
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:contentDescription="@string/aegis_background"
+        android:duplicateParentState="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/pillars_narrow" />
+
     <ImageButton
         android:id="@+id/incognitoButton"
         style="@android:style/Widget.DeviceDefault.ImageButton"
@@ -25,7 +35,7 @@
     <ListView
         android:id="@+id/listView2"
         android:layout_width="375dp"
-        android:layout_height="335dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="70dp"
         android:layout_marginBottom="130dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -38,6 +48,7 @@
         android:layout_width="250dp"
         android:layout_height="36dp"
         android:layout_marginTop="64dp"
+        android:background="@color/colorAccent"
         android:spinnerMode="dropdown"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"

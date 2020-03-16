@@ -9,11 +9,10 @@
 
     <ImageView
         android:id="@+id/background"
-        android:layout_width="465dp"
-        android:layout_height="761dp"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
         android:contentDescription="@string/aegis_background"
         android:duplicateParentState="true"
-        android:paddingLeft="-50dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/pillars_narrow" />
@@ -33,39 +32,49 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="@mipmap/incognito_wings_foreground" />
 
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="354dp"
-        android:layout_height="181dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="80dp"
-        android:layout_marginEnd="16dp"
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="207dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="50dp"
+        android:background="@color/colorAccent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Spinner
-        android:id="@+id/spinner1"
-        android:layout_width="249dp"
-        android:layout_height="32dp"
-        android:layout_marginTop="16dp"
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="375dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/button_shape"
+        android:fontFamily="@font/curve_thin"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="10dp"
+        android:scrollbars="vertical"
+        android:textSize="30.5sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/spinner1" />
 
     <Button
         android:id="@+id/button6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:onClick="onClickResources"
+        android:layout_marginTop="20dp"
         android:fontFamily="@font/curve_thin"
-        android:textSize="30sp"
+        android:onClick="onClickResources"
         android:text="@string/resources"
+        android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+        app:layout_constraintTop_toBottomOf="@+id/textView4" >
+    </Button>
 
     <Button
         android:id="@+id/button13"
