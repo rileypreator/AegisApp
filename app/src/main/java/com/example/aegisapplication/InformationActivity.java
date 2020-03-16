@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.method.ScrollingMovementMethod;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -40,25 +41,23 @@ String whereToGoNext;
                                        int position, long id) {
                 // Get select item
                 int sid=abuseTypeSpinner.getSelectedItemPosition();
-
+                TextView textView = findViewById(R.id.textView4);
+                textView.setMovementMethod(new ScrollingMovementMethod());
                 if (abuseTypes[sid] == abuseTypes[0]) {
                     whereToGoNext = "physical";
-                    TextView textView = findViewById(R.id.textView4);
+
                     textView.setText(R.string.physical_definition);
                 }
                 else if (abuseTypes[sid] == abuseTypes[1]) {
                     whereToGoNext = "sexual";
-                    TextView textView = findViewById(R.id.textView4);
                     textView.setText(R.string.sexual_definition);
                 }
                 else if (abuseTypes[sid] == abuseTypes[2]) {
                     whereToGoNext = "verbal";
-                    TextView textView = findViewById(R.id.textView4);
                     textView.setText(R.string.verbal_definition);
                 }
                 else if (abuseTypes[sid] == abuseTypes[3]) {
                     whereToGoNext = "mental";
-                    TextView textView = findViewById(R.id.textView4);
                     textView.setText(R.string.mental_definition);
                 }
             }
@@ -66,6 +65,7 @@ String whereToGoNext;
             public void onNothingSelected(AdapterView<?> parent) {
                 whereToGoNext = "physical";
                 TextView textView = findViewById(R.id.textView4);
+                textView.setMovementMethod(new ScrollingMovementMethod());
                 textView.setText(R.string.physical_definition);
             }
         });
