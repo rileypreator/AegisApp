@@ -7,6 +7,16 @@
     android:background = "#FFFFFF"
     tools:context=".ResourceActivity">
 
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:contentDescription="@string/aegis_background"
+        android:duplicateParentState="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/pillars_narrow" />
+
     <ImageButton
         android:id="@+id/incognitoButton"
         style="@android:style/Widget.DeviceDefault.ImageButton"

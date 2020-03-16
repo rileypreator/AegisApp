@@ -9,20 +9,18 @@
 
     <ImageView
         android:id="@+id/background"
-        android:layout_width="465dp"
-        android:layout_height="761dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:contentDescription="@string/aegis_background"
         android:duplicateParentState="true"
-        android:paddingLeft="-50dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/pillars_narrow" />
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="393dp"
-        android:layout_height="73dp"
-        android:height="100dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:background="#66FFFFFF"
         android:fontFamily="@font/curve_thin"
         android:lineSpacingExtra="24sp"
@@ -46,32 +44,27 @@
     <Button
         android:id="@+id/yesButton"
         android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:layout_marginTop="116dp"
-        android:layout_marginEnd="164dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
         android:fontFamily="@font/curve_thin"
         android:onClick="onEmergencyClick"
         android:text="@string/yes"
         android:textSize="36sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/textView" />
 
     <Button
         android:id="@+id/noButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="160dp"
-        android:layout_marginTop="57dp"
-        android:layout_marginEnd="160dp"
-        android:layout_marginBottom="192dp"
+        android:layout_marginTop="70dp"
         android:fontFamily="@font/curve_thin"
         android:onClick="onNonEmergencyClick"
         android:text="@string/no"
         android:textSize="36sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/background"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/yesButton"
+        app:layout_constraintStart_toStartOf="@id/yesButton"
         app:layout_constraintTop_toBottomOf="@+id/yesButton" />
 
     <ImageButton
