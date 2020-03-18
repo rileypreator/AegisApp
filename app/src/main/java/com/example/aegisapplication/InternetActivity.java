@@ -34,6 +34,7 @@ public class InternetActivity extends AppCompatActivity {
 
         WebSettings webSettings = webView.getSettings();
         webSettings.setJavaScriptEnabled(true);
+        webSettings.setJavaScriptCanOpenWindowsAutomatically(true);
         webSettings.getDisplayZoomControls();
     }
 
