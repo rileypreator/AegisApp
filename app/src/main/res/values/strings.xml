@@ -220,8 +220,8 @@
     <string name="yes">Yes</string>
     <string name="is_this_an_emergency">Is this an EMERGENCY?</string>
     <string name="is_this_for_you_or_someone_else">Is this for you or someone else?</string>
-    <string name="for_me">For Me</string>
-    <string name="for_someone_else">For Someone Else</string>
+    <string name="for_me">FOR ME</string>
+    <string name="for_someone_else">FOR SOMEONE ELSE</string>
     <string name="emergency_prompt">Is this an emergency?</string>
     <string name="hotline_name">The National Domestic Violence Hotline</string>
     <string name="call_tollfree">CALL TOLL-FREE</string>

@@ -186,7 +186,7 @@
     <string name="spotify_app">com.spotify.music</string>
     <string name="twitter_app">com.twitter.android</string>
     <string name="update">Actualizar</string>
-    <string name="youtube_app">com.google.android.youtube</string>
+    <string name="youtube_app">Agression sexuelle: un acte dans lequel une personne         touche intentionnellement sexuellement une autre personne sans son consentement, ou contraint         ou oblige physiquement une personne à commettre un acte sexuel contre sa volonté.         Viol: type d\'agression sexuelle déclenchée par une ou plusieurs personnes contre une autre         personne sans son consentement. L\'acte peut être accompli par la force physique, ou         lorsque la personne est menacée ou manipulée, ou avec une personne incapable de         consentement valide.</string>
     <string name="pinterest_app">com.pinterest</string>
     <string name="select_an_app_for_incognito_mode">Seleccione una aplicación para el modo de Incógnito</string>
     <string name="options">Opciones</string>
@@ -208,5 +208,10 @@
     <string name="verbal">Verbal</string>
     <string name="mental">Emocional / Mental</string>
     <string name="go">VAMOS</string>
+    <string name="admin_button">Administrador</string>
+    <string name="settings_button">Configuraciones</string>
+    <string name="for_someone_else">PARA ALGUIEN MÁS</string>
+    <string name="is_this_for_you_or_someone_else">¿Es esto para ti o para alguien más?</string>
+    <string name="is_this_an_emergency">¿Es esto una EMERGENCIA?</string>
 
 </resources>
