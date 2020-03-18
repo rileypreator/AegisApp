@@ -10,7 +10,6 @@
     <!-- Contact Resources -->
     <string name="hotline_call">1-800-799-7233</string>
     <string name="hotline_TTY_call">1-800-787-3224</string>
-    <string name="chat_url">https://ndvh.secure.force.com/resources/LiveAgentPreChat?endpoint=https%3A%2F%2Fzq4.la4-c3-ph2.salesforceliveagent.com%2Fcontent%2Fs%2Fchat%3Flanguage%3Des%23deployment_id%3D5722A000000PBnZ%26org_id%3D00DF00000006ovk%26button_id%3D5732A000000PC5S%26session_id%3Dd019d2d8-b715-4b23-ae16-efa5cc0ed6c1\u0026language=spanish</string>
 
     <!-- Verbal resource array -->
     <string-array name="verbal_forMe">
@@ -208,5 +207,11 @@
     <string name="verbal">Verbale</string>
     <string name="mental">Émotionnel / Mental</string>
     <string name="go">ALLER</string>
+    <string name="chat_url">https://ndvh.secure.force.com/resources/apex/LiveAgentPreChat?endpoint=https%3A%2F%2Fbmw1.la4-c3-ph2.salesforceliveagent.com%2Fcontent%2Fs%2Fchat%3Flanguage%3Den_US%23deployment_id%3D5722A000000PBnZ%26org_id%3D00DF00000006ovk%26button_id%3D5732A000000PC5N%26session_id%3D4a67f7e2-a0ca-4af2-939e-aa3c3dce08de</string>
+    <string name="admin_button">Administrateur</string>
+    <string name="settings_button">Réglages</string>
+    <string name="for_someone_else">POUR QUELQU\'UN D\'AUTRE</string>
+    <string name="is_this_for_you_or_someone_else">Est-ce pour vous ou pour quelqu\'un d\'autre?</string>
+    <string name="is_this_an_emergency">Est-ce une URGENCE?</string>
 
 </resources>

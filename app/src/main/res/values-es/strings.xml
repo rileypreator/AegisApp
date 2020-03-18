@@ -208,5 +208,10 @@
     <string name="verbal">Verbal</string>
     <string name="mental">Emocional / Mental</string>
     <string name="go">VAMOS</string>
+    <string name="admin_button">Administrador</string>
+    <string name="settings_button">Configuraciones</string>
+    <string name="for_someone_else">PARA ALGUIEN MÁS</string>
+    <string name="is_this_for_you_or_someone_else">¿Es esto para ti o para alguien más?</string>
+    <string name="is_this_an_emergency">¿Es esto una EMERGENCIA?</string>
 
 </resources>
