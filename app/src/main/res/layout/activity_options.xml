@@ -45,6 +45,7 @@
         android:fontFamily="@font/curve_thin"
         android:text="http://"
         android:textColor="@android:color/black"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView10" />
@@ -189,8 +190,8 @@
 
     <TextView
         android:id="@+id/textView8"
-        android:layout_width="286dp"
-        android:layout_height="26dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginStart="62dp"
         android:layout_marginTop="12dp"
         android:layout_marginEnd="63dp"
@@ -199,6 +200,7 @@
         android:textAlignment="center"
         android:textColor="@android:color/black"
         android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
@@ -214,6 +216,7 @@
         android:text="@string/or_enter_your_own_website"
         android:textColor="@android:color/black"
         android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView6" />
