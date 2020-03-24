@@ -13,146 +13,174 @@
         android:id="@+id/aegisBackground"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="72dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/constraintLayout2"
         app:srcCompat="@drawable/aegis_admin_photo" />
 
-    <EditText
-        android:id="@+id/editText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:fontFamily="@font/curve_thin"
-        android:inputType="textPersonName"
-        android:textColor="@color/lightBlueAccent"
-        android:textSize="24sp"
-        tools:layout_editor_absoluteX="74dp"
-        tools:layout_editor_absoluteY="184dp" />
-
-    <TextView
-        android:id="@+id/statusview"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/curve_thin"
-        android:text="Enter Password"
-        android:textColor="@color/lightBlueAccent"
-        android:textSize="36sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="260dp" />
-
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="0dp">
+        tools:layout_editor_absoluteY="-16dp">
 
         <Button
             android:id="@+id/button9"
             android:layout_width="75dp"
             android:layout_height="75dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginBottom="16dp"
             android:background="@drawable/phone9"
             android:stateListAnimator="@null"
-            tools:layout_editor_absoluteX="243dp"
-            tools:layout_editor_absoluteY="495dp" />
+            app:layout_constraintBottom_toTopOf="@+id/buttonDeleteBack"
+            app:layout_constraintStart_toEndOf="@+id/button8" />
 
         <Button
             android:id="@+id/button6"
             android:layout_width="75dp"
             android:layout_height="75dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginBottom="16dp"
             android:background="@drawable/phone6"
             android:stateListAnimator="@null"
-            tools:layout_editor_absoluteX="243dp"
-            tools:layout_editor_absoluteY="410dp" />
+            app:layout_constraintBottom_toTopOf="@+id/button9"
+            app:layout_constraintStart_toEndOf="@+id/button5" />
 
         <Button
             android:id="@+id/button4"
             android:layout_width="75dp"
             android:layout_height="75dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="16dp"
             android:background="@drawable/phone4"
             android:stateListAnimator="@null"
-            tools:layout_editor_absoluteX="88dp"
-            tools:layout_editor_absoluteY="410dp" />
+            app:layout_constraintBottom_toTopOf="@+id/button7"
+            app:layout_constraintEnd_toStartOf="@+id/button5" />
 
         <Button
             android:id="@+id/button8"
             android:layout_width="75dp"
             android:layout_height="75dp"
+            android:layout_marginBottom="16dp"
             android:background="@drawable/phone8"
             android:stateListAnimator="@null"
-            tools:layout_editor_absoluteX="168dp"
-            tools:layout_editor_absoluteY="495dp" />
+            app:layout_constraintBottom_toTopOf="@+id/button0"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
 
         <Button
             android:id="@+id/button7"
             android:layout_width="75dp"
             android:layout_height="75dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="16dp"
             android:background="@drawable/phone7"
             android:stateListAnimator="@null"
-            tools:layout_editor_absoluteX="88dp"
-            tools:layout_editor_absoluteY="495dp" />
+            app:layout_constraintBottom_toTopOf="@+id/buttonExit"
+            app:layout_constraintEnd_toStartOf="@+id/button8" />
 
         <Button
             android:id="@+id/button1"
             android:layout_width="75dp"
             android:layout_height="75dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="16dp"
             android:background="@drawable/phone1"
             android:stateListAnimator="@null"
-            tools:layout_editor_absoluteX="88dp"
-            tools:layout_editor_absoluteY="325dp" />
+            app:layout_constraintBottom_toTopOf="@+id/button4"
+            app:layout_constraintEnd_toStartOf="@+id/button2" />
 
         <Button
             android:id="@+id/button3"
             android:layout_width="75dp"
             android:layout_height="75dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginBottom="16dp"
             android:background="@drawable/phone3"
             android:stateListAnimator="@null"
-            tools:layout_editor_absoluteX="243dp"
-            tools:layout_editor_absoluteY="325dp" />
+            app:layout_constraintBottom_toTopOf="@+id/button6"
+            app:layout_constraintStart_toEndOf="@+id/button2" />
 
         <Button
             android:id="@+id/button2"
             android:layout_width="75dp"
             android:layout_height="75dp"
+            android:layout_marginBottom="16dp"
             android:background="@drawable/phone2"
             android:stateListAnimator="@null"
-            tools:layout_editor_absoluteX="168dp"
-            tools:layout_editor_absoluteY="325dp" />
+            app:layout_constraintBottom_toTopOf="@+id/button5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
 
         <Button
             android:id="@+id/button5"
             android:layout_width="75dp"
             android:layout_height="75dp"
+            android:layout_marginBottom="16dp"
             android:background="@drawable/phone5"
             android:stateListAnimator="@null"
-            tools:layout_editor_absoluteX="168dp"
-            tools:layout_editor_absoluteY="410dp" />
+            app:layout_constraintBottom_toTopOf="@+id/button8"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
 
         <Button
             android:id="@+id/buttonDeleteBack"
             android:layout_width="75dp"
             android:layout_height="75dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginBottom="72dp"
             android:stateListAnimator="@null"
-            tools:layout_editor_absoluteX="243dp"
-            tools:layout_editor_absoluteY="582dp" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/button0" />
 
         <Button
             android:id="@+id/buttonExit"
             android:layout_width="75dp"
             android:layout_height="75dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="72dp"
             android:stateListAnimator="@null"
-            tools:layout_editor_absoluteX="88dp"
-            tools:layout_editor_absoluteY="582dp" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/button0" />
 
         <Button
             android:id="@+id/button0"
             android:layout_width="75dp"
             android:layout_height="75dp"
+            android:layout_marginBottom="72dp"
             android:background="@drawable/phone0"
             android:stateListAnimator="@null"
-            tools:layout_editor_absoluteX="168dp"
-            tools:layout_editor_absoluteY="582dp" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="199dp"
+            android:layout_height="49dp"
+            android:layout_marginBottom="28dp"
+            android:ems="10"
+            android:fontFamily="@font/curve_thin"
+            android:inputType="textPersonName"
+            android:textColor="@color/lightBlueAccent"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/statusview"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/statusview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:fontFamily="@font/curve_thin"
+            android:text="Enter Password"
+            android:textColor="@color/lightBlueAccent"
+            android:textSize="36sp"
+            app:layout_constraintBottom_toTopOf="@+id/button2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
