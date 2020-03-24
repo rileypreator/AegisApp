@@ -19,7 +19,7 @@ import android.widget.TextView;
 public class PinView extends Activity {
 
     String userEntered;
-    String userPin="8888";
+    String userPin = "8888";
 
     final int PIN_LENGTH = 4;
     boolean keyPadLockedFlag = false;
@@ -31,7 +31,6 @@ public class PinView extends Activity {
     TextView pinBox1;
     TextView pinBox2;
     TextView pinBox3;
-
 
 
     TextView statusView;
@@ -75,7 +74,7 @@ public class PinView extends Activity {
         backSpace.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                passwordInput.setText(passwordInput.getText().toString().substring(0,passwordInput.getText().toString().length()-2));
+                passwordInput.setText(passwordInput.getText().toString().substring(0, passwordInput.getText().toString().length() - 2));
             }
         });
         buttonExit.setOnClickListener(new View.OnClickListener() {
@@ -99,14 +98,12 @@ public class PinView extends Activity {
         buttonDelete.setOnClickListener(new View.OnClickListener() {
                                             public void onClick(View v) {
 
-                                                if (keyPadLockedFlag == true)
-                                                {
+                                                if (keyPadLockedFlag == true) {
                                                     return;
                                                 }
 
-                                                if (userEntered.length()>0)
-                                                {
-                                                    userEntered = userEntered.substring(0,userEntered.length()-1);
+                                                if (userEntered.length() > 0) {
+                                                    userEntered = userEntered.substring(0, userEntered.length() - 1);
                                                     passwordInput.setText("");
                                                 }
 
@@ -116,48 +113,36 @@ public class PinView extends Activity {
                                         }
         );
 
-        titleView = (TextView)findViewById(R.id.time);
+        titleView = (TextView) findViewById(R.id.time);
         //titleView.setTypeface(xpressive);
-
-
-
-
-
-
 
 
         View.OnClickListener pinButtonHandler = new View.OnClickListener() {
             public void onClick(View v) {
 
-                if (keyPadLockedFlag == true)
-                {
+                if (keyPadLockedFlag == true) {
                     return;
                 }
 
-                Button pressedButton = (Button)v;
+                Button pressedButton = (Button) v;
 
 
-                if (userEntered.length()<PIN_LENGTH)
-                {
+                if (userEntered.length() < PIN_LENGTH) {
                     userEntered = userEntered + pressedButton.getText();
-                    Log.v("PinView", "User entered="+userEntered);
+                    Log.v("PinView", "User entered=" + userEntered);
 
                     //Update pin boxes
-                    passwordInput.setText(passwordInput.getText().toString()+"*");
+                    passwordInput.setText(passwordInput.getText().toString() + "*");
                     passwordInput.setSelection(passwordInput.getText().toString().length());
 
-                    if (userEntered.length()==PIN_LENGTH)
-                    {
+                    if (userEntered.length() == PIN_LENGTH) {
                         //Check if entered PIN is correct
-                        if (userEntered.equals(userPin))
-                        {
+                        if (userEntered.equals(userPin)) {
                             statusView.setTextColor(Color.GREEN);
                             statusView.setText("Correct");
                             Log.v("PinView", "Correct PIN");
                             finish();
-                        }
-                        else
-                        {
+                        } else {
                             statusView.setTextColor(Color.RED);
                             statusView.setText("Wrong PIN. Keypad Locked");
                             keyPadLockedFlag = true;
@@ -166,9 +151,7 @@ public class PinView extends Activity {
                             new LockKeyPadOperation().execute("");
                         }
                     }
-                }
-                else
-                {
+                } else {
                     //Roll over
                     passwordInput.setText("");
 
@@ -177,7 +160,7 @@ public class PinView extends Activity {
                     statusView.setText("");
 
                     userEntered = userEntered + pressedButton.getText();
-                    Log.v("PinView", "User entered="+userEntered);
+                    Log.v("PinView", "User entered=" + userEntered);
 
                     //Update pin boxes
                     passwordInput.setText("8");
@@ -189,54 +172,50 @@ public class PinView extends Activity {
         };
 
 
-        button0 = (Button)findViewById(R.id.button0);
+        button0 = (Button) findViewById(R.id.button0);
         //button0.setTypeface(xpressive);
         button0.setOnClickListener(pinButtonHandler);
 
-        button1 = (Button)findViewById(R.id.button1);
+        button1 = (Button) findViewById(R.id.button1);
         //button1.setTypeface(xpressive);
         button1.setOnClickListener(pinButtonHandler);
 
-        button2 = (Button)findViewById(R.id.button2);
+        button2 = (Button) findViewById(R.id.button2);
         //button2.setTypeface(xpressive);
         button2.setOnClickListener(pinButtonHandler);
 
 
-        button3 = (Button)findViewById(R.id.button1);
+        button3 = (Button) findViewById(R.id.button1);
         //button3.setTypeface(xpressive);
         button3.setOnClickListener(pinButtonHandler);
 
-        button4 = (Button)findViewById(R.id.button4);
+        button4 = (Button) findViewById(R.id.button4);
         //button4.setTypeface(xpressive);
         button4.setOnClickListener(pinButtonHandler);
 
-        button5 = (Button)findViewById(R.id.button5);
+        button5 = (Button) findViewById(R.id.button5);
         //button5.setTypeface(xpressive);
         button5.setOnClickListener(pinButtonHandler);
 
-        button6 = (Button)findViewById(R.id.button6);
+        button6 = (Button) findViewById(R.id.button6);
         //button6.setTypeface(xpressive);
         button6.setOnClickListener(pinButtonHandler);
 
-        button7 = (Button)findViewById(R.id.button7);
+        button7 = (Button) findViewById(R.id.button7);
         //button7.setTypeface(xpressive);
         button7.setOnClickListener(pinButtonHandler);
 
-        button8 = (Button)findViewById(R.id.button8);
+        button8 = (Button) findViewById(R.id.button8);
         //button8.setTypeface(xpressive);
         button8.setOnClickListener(pinButtonHandler);
 
-        button9 = (Button)findViewById(R.id.button9);
+        button9 = (Button) findViewById(R.id.button9);
         //button9.setTypeface(xpressive);
         button9.setOnClickListener(pinButtonHandler);
 
 
-
-
-
-        buttonDelete = (Button)findViewById(R.id.buttonDeleteBack);
+        buttonDelete = (Button) findViewById(R.id.buttonDeleteBack);
         //buttonDelete.setTypeface(xpressive);
-
 
 
     }
@@ -262,7 +241,7 @@ public class PinView extends Activity {
 
         @Override
         protected String doInBackground(String... params) {
-            for(int i=0;i<2;i++) {
+            for (int i = 0; i < 2; i++) {
                 try {
                     Thread.sleep(1000);
                 } catch (InterruptedException e) {
@@ -294,3 +273,5 @@ public class PinView extends Activity {
         @Override
         protected void onProgressUpdate(Void... values) {
         }
+    }
+}
