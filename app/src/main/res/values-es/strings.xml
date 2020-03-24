@@ -120,7 +120,7 @@
     <string name="physical_other_2_name">Cómo Ayudar a las Víctimas de Violencia Doméstica</string>
     <string name="physical_self_1">https://www.thehotline.org/help/path-to-safety/</string>
     <string name="physical_self_1_name">El Camino a la Seguridad</string>
-    <string name="physical_self_2">https://www.helpguide.org/articles/abuse/getting-out-of-an-abusive-relationship.html</string>
+    <string name="physical_self_2">https://www.helpguide.org/articles/abuse/getting-out-of-an-abusive-relationship.htm</string>
     <string name="physical_self_2_name">Salir de Una Relación Abusiva</string>
     <string name="physical_self_3">https://familycrisiscenter.wixsite.com/familycrisiscenter/domestic-violence</string>
     <string name="physical_self_3_name">Violencia Doméstica</string>
@@ -129,7 +129,6 @@
     <string-array name="sexual_forMe">
         <item>@string/sexual_self_1</item>
         <item>@string/sexual_self_2</item>
-        <item>@string/sexual_self_3</item>
     </string-array>
 
     <!-- Sexual resource array -->
@@ -144,7 +143,6 @@
     <string-array name="sexual_forMe_names">
         <item>@string/sexual_self_1_name</item>
         <item>@string/sexual_self_2_name</item>
-        <item>@string/sexual_self_3_name</item>
     </string-array>
 
     <!-- Sexual resource array -->
@@ -165,12 +163,10 @@
     <string name="sexual_other_3_name">Ayudando a los Sobrevivientes de Agresión Sexual</string>
     <string name="sexual_other_4">https://www.nytimes.com/2019/02/27/smarter-living/sexual-abuse-assault-support-mental-health.html</string>
     <string name="sexual_other_4_name">Cómo Apoyar a una Amiga o ser Querido que ha Sido Abusado Sexualmente</string>
-    <string name="sexual_self_1">https://www.helpguide.org/articles/ptsd-trauma/recovering-from-rape-and-sexual-trauma.html</string>
+    <string name="sexual_self_1">https://www.helpguide.org/articles/ptsd-trauma/recovering-from-rape-and-sexual-trauma.htm</string>
     <string name="sexual_self_1_name">Recuperándose de la Violación y el Trauma Sexual</string>
     <string name="sexual_self_2">https://victimconnect.org/tipos-de-delitos/agresion-sexual/?lang=es</string>
     <string name="sexual_self_2_name">Agresión Sexual</string>
-    <string name="sexual_self_3">https://victimsofcrime.org/help-for-crime-victims/get-help-bulletins-for-crime-victims/bulletins-for-teens/sexual-assault</string>
-    <string name="sexual_self_3_name">Adolescentes y Asalto Secundario</string>
 
     <string name="aegis_background">Fondo para Aegis</string>
     <string name="incognito_button">Botón para Incognito</string>
