@@ -87,7 +87,7 @@
         <TextView
             android:id="@+id/openingWelcome"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="350dp"
             android:layout_marginStart="40dp"
             android:layout_marginTop="80dp"
             android:layout_marginEnd="40dp"
@@ -95,6 +95,7 @@
             android:fontFamily="casual"
             android:text="@string/safety_alert"
             android:textAlignment="center"
+            android:scrollbars="vertical"
             android:textColor="#F2F8F3F3"
             android:textSize="22sp"
             app:layout_constraintEnd_toEndOf="parent"

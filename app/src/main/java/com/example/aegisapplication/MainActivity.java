@@ -6,11 +6,13 @@ import androidx.constraintlayout.widget.ConstraintSet;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.method.ScrollingMovementMethod;
 import android.transition.ChangeBounds;
 import android.transition.TransitionManager;
 import android.view.View;
 import android.view.animation.AnticipateInterpolator;
 import android.widget.Button;
+import android.widget.TextView;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -23,6 +25,8 @@ public class MainActivity extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        TextView textView = findViewById(R.id.openingWelcome);
+        textView.setMovementMethod(new ScrollingMovementMethod());
 
         moveAlert = findViewById(R.id.closeWelcome);
         ccl = findViewById(R.id.mainLayout);

@@ -21,7 +21,7 @@
         android:textAlignment="center"
         android:textAllCaps="false"
         android:textColor="@android:color/primary_text_light_nodisable"
-        android:textSize="30sp"
+        android:textSize="25sp"
         android:typeface="serif"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -46,7 +46,7 @@
         android:fontFamily="@font/curve_thin"
         android:onClick="onCallClick"
         android:text="@string/call_tollfree"
-        android:textSize="28sp"
+        android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
@@ -61,7 +61,7 @@
         android:fontFamily="@font/curve_thin"
         android:onClick="onChatClick"
         android:text="@string/chat_247"
-        android:textSize="28sp"
+        android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button10" />
@@ -79,7 +79,7 @@
         android:text="@string/abuse_information"
         android:textAlignment="center"
         android:textColor="@android:color/primary_text_light_nodisable"
-        android:textSize="30sp"
+        android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button11" />
@@ -92,7 +92,7 @@
         android:fontFamily="@font/curve_thin"
         android:onClick="onResourceClick"
         android:text="@string/go_now"
-        android:textSize="28sp"
+        android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView7" />
@@ -107,7 +107,7 @@
         android:fontFamily="@font/curve_thin"
         android:onClick="onTTYClick"
         android:text="@string/call_tollfree_tty"
-        android:textSize="28sp"
+        android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button7" />
@@ -122,7 +122,7 @@
         android:fontFamily="@font/curve_thin"
         android:onClick="onTextClick"
         android:text="@string/start_text"
-        android:textSize="28sp"
+        android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView9" />
@@ -138,7 +138,7 @@
         android:text="@string/textline"
         android:textAlignment="center"
         android:textColor="@android:color/primary_text_light_nodisable"
-        android:textSize="30sp"
+        android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button8" />
