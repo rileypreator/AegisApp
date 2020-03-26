@@ -62,7 +62,7 @@ public class EmergencyActivity extends AppCompatActivity {
         else if (click3 == false) {
             click3 = true;
 
-            Intent intent = new Intent(this, AdminLoginActivity.class);
+            Intent intent = new Intent(this, PinView.class);
             startActivity(intent);
         }
 

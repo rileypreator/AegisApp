@@ -50,7 +50,6 @@ public class PinView extends Activity {
     Button buttonDelete;
     EditText passwordInput;
     ImageView backSpace;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -71,12 +70,14 @@ public class PinView extends Activity {
         passwordInput = (EditText) findViewById(R.id.editText);
         backSpace = (ImageView) findViewById(R.id.imageView);
         buttonExit = (Button) findViewById(R.id.buttonExit);
-        backSpace.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                passwordInput.setText(passwordInput.getText().toString().substring(0, passwordInput.getText().toString().length() - 2));
-            }
-        });
+
+        //TODO in the future
+//        backSpace.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                passwordInput.setText(passwordInput.getText().toString().substring(0, passwordInput.getText().toString().length() - 2));
+//            }
+//        });
         buttonExit.setOnClickListener(new View.OnClickListener() {
                                           public void onClick(View v) {
 
@@ -185,7 +186,7 @@ public class PinView extends Activity {
         button2.setOnClickListener(pinButtonHandler);
 
 
-        button3 = (Button) findViewById(R.id.button1);
+        button3 = (Button) findViewById(R.id.button3);
         //button3.setTypeface(xpressive);
         button3.setOnClickListener(pinButtonHandler);
 

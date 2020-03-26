@@ -7,15 +7,16 @@
     android:layout_height="match_parent"
     android:background="#FFFFFF"
     android:orientation="vertical"
-    tools:context=".AdminLoginActivity">
+    tools:context=".PinView">
 
     <ImageView
-        android:id="@+id/aegisBackground"
-        android:layout_width="wrap_content"
+        android:id="@+id/imageView8"
+        android:layout_width="411dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="72dp"
+        android:layout_marginTop="80dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/constraintLayout2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/aegis_admin_photo" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -33,6 +34,8 @@
             android:layout_marginBottom="16dp"
             android:background="@drawable/phone9"
             android:stateListAnimator="@null"
+            android:text="9"
+            android:textColor="#00FFFFFF"
             app:layout_constraintBottom_toTopOf="@+id/buttonDeleteBack"
             app:layout_constraintStart_toEndOf="@+id/button8" />
 
@@ -44,6 +47,8 @@
             android:layout_marginBottom="16dp"
             android:background="@drawable/phone6"
             android:stateListAnimator="@null"
+            android:text="6"
+            android:textColor="#00FFFFFF"
             app:layout_constraintBottom_toTopOf="@+id/button9"
             app:layout_constraintStart_toEndOf="@+id/button5" />
 
@@ -55,6 +60,8 @@
             android:layout_marginBottom="16dp"
             android:background="@drawable/phone4"
             android:stateListAnimator="@null"
+            android:text="4"
+            android:textColor="#00FFFFFF"
             app:layout_constraintBottom_toTopOf="@+id/button7"
             app:layout_constraintEnd_toStartOf="@+id/button5" />
 
@@ -65,6 +72,8 @@
             android:layout_marginBottom="16dp"
             android:background="@drawable/phone8"
             android:stateListAnimator="@null"
+            android:text="8"
+            android:textColor="#00FFFFFF"
             app:layout_constraintBottom_toTopOf="@+id/button0"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
@@ -77,6 +86,8 @@
             android:layout_marginBottom="16dp"
             android:background="@drawable/phone7"
             android:stateListAnimator="@null"
+            android:text="7"
+            android:textColor="#00FFFFFF"
             app:layout_constraintBottom_toTopOf="@+id/buttonExit"
             app:layout_constraintEnd_toStartOf="@+id/button8" />
 
@@ -88,6 +99,8 @@
             android:layout_marginBottom="16dp"
             android:background="@drawable/phone1"
             android:stateListAnimator="@null"
+            android:text="1"
+            android:textColor="#00FFFFFF"
             app:layout_constraintBottom_toTopOf="@+id/button4"
             app:layout_constraintEnd_toStartOf="@+id/button2" />
 
@@ -99,6 +112,8 @@
             android:layout_marginBottom="16dp"
             android:background="@drawable/phone3"
             android:stateListAnimator="@null"
+            android:text="3"
+            android:textColor="#00FFFFFF"
             app:layout_constraintBottom_toTopOf="@+id/button6"
             app:layout_constraintStart_toEndOf="@+id/button2" />
 
@@ -109,6 +124,8 @@
             android:layout_marginBottom="16dp"
             android:background="@drawable/phone2"
             android:stateListAnimator="@null"
+            android:text="2"
+            android:textColor="#00FFFFFF"
             app:layout_constraintBottom_toTopOf="@+id/button5"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
@@ -120,19 +137,11 @@
             android:layout_marginBottom="16dp"
             android:background="@drawable/phone5"
             android:stateListAnimator="@null"
+            android:text="5"
+            android:textColor="#00FFFFFF"
             app:layout_constraintBottom_toTopOf="@+id/button8"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
-
-        <Button
-            android:id="@+id/buttonDeleteBack"
-            android:layout_width="75dp"
-            android:layout_height="75dp"
-            android:layout_marginStart="12dp"
-            android:layout_marginBottom="72dp"
-            android:stateListAnimator="@null"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/button0" />
 
         <Button
             android:id="@+id/buttonExit"
@@ -141,6 +150,7 @@
             android:layout_marginEnd="12dp"
             android:layout_marginBottom="72dp"
             android:stateListAnimator="@null"
+            android:textColor="#00FFFFFF"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/button0" />
 
@@ -151,6 +161,8 @@
             android:layout_marginBottom="72dp"
             android:background="@drawable/phone0"
             android:stateListAnimator="@null"
+            android:text="0"
+            android:textColor="#00FFFFFF"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
@@ -181,6 +193,17 @@
             app:layout_constraintBottom_toTopOf="@+id/button2"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/buttonDeleteBack"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginBottom="72dp"
+            android:background="@drawable/phone_back"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/button0"
+            android:stateListAnimator="@null" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
