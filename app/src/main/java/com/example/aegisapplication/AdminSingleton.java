@@ -2,17 +2,17 @@ package com.example.aegisapplication;
 
 import java.util.HashMap;
 
-public class AdminMap {
+public class AdminSingleton {
 
     private static HashMap<String, AdminListener> map = new HashMap<String, AdminListener>();
-    private static AdminMap instance;
+    private static AdminSingleton instance;
 
     private void AdminMap() {
 
     }
-    public static AdminMap getInstance() {
+    public static AdminSingleton getInstance() {
         if (instance == null)
-            instance = new AdminMap();
+            instance = new AdminSingleton();
         return instance;
     }
 
@@ -24,5 +24,9 @@ public class AdminMap {
             map.put(string, adminListener);
         }
 
+    }
+
+    public HashMap<String, AdminListener> getMap() {
+        return map;
     }
 }

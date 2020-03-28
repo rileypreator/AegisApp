@@ -142,9 +142,11 @@ public class PinView extends Activity {
                             statusView.setTextColor(Color.GREEN);
                             statusView.setText("Correct");
                             Log.v("PinView", "Correct PIN");
+                            openAdminMode(v);
                             finish();
                         } else {
                             statusView.setTextColor(Color.RED);
+                            //TODO finish the keypad lock
                             statusView.setText("Wrong PIN. Keypad Locked");
                             keyPadLockedFlag = true;
                             Log.v("PinView", "Wrong PIN");
@@ -171,7 +173,6 @@ public class PinView extends Activity {
 
             }
         };
-
 
         button0 = (Button) findViewById(R.id.button0);
         //button0.setTypeface(xpressive);
@@ -220,6 +221,7 @@ public class PinView extends Activity {
 
 
     }
+
 
     @Override
     public void onBackPressed() {
@@ -275,4 +277,10 @@ public class PinView extends Activity {
         protected void onProgressUpdate(Void... values) {
         }
     }
+
+    public void openAdminMode(View view) {
+        Intent intent = new Intent(this, AdminInfoActivity.class);
+        startActivity(intent);
+    }
+
 }
