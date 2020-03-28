@@ -12,6 +12,7 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true"
         >
+        <activity android:name=".AdminInfoActivity"></activity>
         <activity android:name=".PinView"></activity>
         <activity android:name=".AdminLoginActivity"></activity>
         <activity android:name=".ContactActivity"></activity>

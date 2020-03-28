@@ -38,8 +38,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="TextView"
-                android:textSize="24sp"
+                android:textColor="#FD41C6EF"
+                android:textSize="18sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -47,7 +47,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="TextView"
+                android:textColor="#CC5E5E"
                 android:textSize="18sp" />
 
             <TextView
@@ -58,6 +58,7 @@
                 android:layout_weight="1"
                 android:gravity="right"
                 android:text="TextView"
+                android:textColor="#A9ED1D1D"
                 android:textSize="18sp" />
         </LinearLayout>
     </LinearLayout>

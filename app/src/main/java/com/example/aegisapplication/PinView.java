@@ -143,7 +143,7 @@ public class PinView extends Activity {
                             statusView.setText("Correct");
                             Log.v("PinView", "Correct PIN");
                             openAdminMode(v);
-                            finish();
+//                            finish();
                         } else {
                             statusView.setTextColor(Color.RED);
                             //TODO finish the keypad lock

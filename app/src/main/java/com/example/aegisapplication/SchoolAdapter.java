@@ -54,6 +54,10 @@ public class SchoolAdapter extends BaseAdapter {
                 String url = resourcesData.get(position2);
                 InformationPresenter presenter = new InformationPresenter(activity);
                 presenter.goToInternet(url);
+
+                //To put the elements in Admin Mode
+                AdminListener smallListener = new AdminListener(url, System.currentTimeMillis());
+                AdminSingleton.getInstance().setMap(url, smallListener);
             }
         });
 

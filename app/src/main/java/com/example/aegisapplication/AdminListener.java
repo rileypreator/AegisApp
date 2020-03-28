@@ -16,8 +16,10 @@ public class AdminListener {
         type = 0;
     }
 
-    public AdminListener(Time time) {
-        lastTimeClicked = time;
+    public AdminListener(String link, long type) {
+        this.link = link;
+        totalClicks = 0;
+        lastTimeClicked = new Time(type);
     }
 
     public int getTotalClicks() {
