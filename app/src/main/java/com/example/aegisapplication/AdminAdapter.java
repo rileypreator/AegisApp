@@ -13,6 +13,8 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import java.util.Arrays;
+
 public class AdminAdapter extends ArrayAdapter {
     //https://appsandbiscuits.com/listview-tutorial-android-12-ccef4ead27cc
     //Helped me create the view that I needed
@@ -20,12 +22,12 @@ public class AdminAdapter extends ArrayAdapter {
     private final String[] imageArray;
     private final String[] linkArray;
     private final String[] lastClickedArray;
-    private final int[] timesClickedArray;
+    private final Integer[] timesClickedArray;
 
 
     //CONSTRUCTOR
     public AdminAdapter(Activity context, String[] linkArrayParam, String[] lastClickedArrayParam,
-                        int[] timesClickedArrayParam, String[] imageIDArrayParam){
+                        Integer[] timesClickedArrayParam, String[] imageIDArrayParam){
         super(context,R.layout.admin_linear_row , linkArrayParam);
 
         this.context=context;
@@ -42,11 +44,15 @@ public class AdminAdapter extends ArrayAdapter {
         TextView linkTextField = (TextView) rowView.findViewById(R.id.nameOfLink);
         TextView timeLastClickedField = (TextView) rowView.findViewById(R.id.timelastClicked);
         TextView numberOfTimesField = (TextView) rowView.findViewById(R.id.numberOfTimes);
+
         TextView abuseTypePhoto = (TextView) rowView.findViewById(R.id.abuseType);
 
         linkTextField.setText(linkArray[position]);
         timeLastClickedField.setText(lastClickedArray[position]);
-        numberOfTimesField.setText(lastClickedArray[position]);
+        if (timesClickedArray[position] != null)
+            numberOfTimesField.setText(Integer.toString(timesClickedArray[position]));
+        else
+            numberOfTimesField.setText("");
         abuseTypePhoto.setText(imageArray[position]);
 
 

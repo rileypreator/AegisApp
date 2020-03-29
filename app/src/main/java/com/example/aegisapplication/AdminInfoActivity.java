@@ -15,7 +15,7 @@ public class AdminInfoActivity extends AppCompatActivity {
     private String[] imagesArray = new String[50];
     private String[] linksArray = new String[50];
     private String[] lastClickedArray = new String[50];
-    private int[] numberofTimesArray = new int[50];
+    private Integer[] numberofTimesArray = new Integer[50];
     ListView listView;
 
     @Override
@@ -26,6 +26,10 @@ public class AdminInfoActivity extends AppCompatActivity {
 
         AdminAdapter adapter = new AdminAdapter(this, linksArray, lastClickedArray, numberofTimesArray, imagesArray);
         setStrings();
+
+        if (linksArray[0] == null) {
+
+        }
 
         listView = (ListView) findViewById(R.id.adminListView);
         listView.setAdapter(adapter);
