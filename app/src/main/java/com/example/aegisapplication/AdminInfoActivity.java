@@ -37,7 +37,7 @@ public class AdminInfoActivity extends AppCompatActivity {
 
     private void setStrings() {
 
-        AdminSingleton stringMap = AdminSingleton.getInstance();
+        AdminSingleton stringMap = AdminSingleton.getInstance(this);
 
         HashMap<String, AdminListener> mapToIterate = stringMap.getMap();
         AdminListener newListener;
@@ -49,6 +49,7 @@ public class AdminInfoActivity extends AppCompatActivity {
             linksArray[i] = newListener.getLink();
             lastClickedArray[i] = newListener.getLastTimeClicked();
             numberofTimesArray[i] = newListener.getTotalClicks();
+            i++;
         }
     }
 }
