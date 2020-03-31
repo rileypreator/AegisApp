@@ -129,7 +129,7 @@ Activity activity = this;
                 //ArrayAdapter<String> adapter2 = new ArrayAdapter<String>(context, android.R.layout.simple_list_item_1, resources);
                 ArrayList<String> a = new ArrayList<>(Arrays.asList(resources_names));
                 ArrayList<String> b = new ArrayList<>(Arrays.asList(resources));
-                SchoolAdapter mAdapter = new SchoolAdapter(context, a, b, activity);
+                ResourceRow mAdapter = new ResourceRow(context, a, b, activity);
                 ListView listView = findViewById(R.id.listView2);
                 listView.setAdapter(mAdapter);
                 mAdapter.notifyDataSetChanged();
