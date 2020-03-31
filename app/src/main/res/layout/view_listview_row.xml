@@ -11,7 +11,7 @@
     app:layout_constraintStart_toStartOf="parent">
 
     <TextView
-        android:id="@+id/txtSchoolTitle"
+        android:id="@+id/txtResourceRowTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fontFamily="@font/curve_thin"

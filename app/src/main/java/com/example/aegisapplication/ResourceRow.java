@@ -11,24 +11,24 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-public class SchoolAdapter extends BaseAdapter {
+public class ResourceRow extends BaseAdapter {
 
     private Context mContext;
-    private ArrayList<String> mArrSchoolData;
+    private ArrayList<String> mArrResourceRowData;
     private ArrayList<String> resourcesData;
     private Activity activity;
 
-    public SchoolAdapter(Context context, ArrayList arrSchoolData, ArrayList arrResourcesData, Activity arrActivity) {
+    public ResourceRow(Context context, ArrayList arrResourceRowData, ArrayList arrResourcesData, Activity arrActivity) {
         super();
         mContext = context;
-        mArrSchoolData = arrSchoolData;
+        mArrResourceRowData = arrResourceRowData;
         resourcesData = arrResourcesData;
         activity = arrActivity;
     }
 
     public int getCount() {
         // return the number of records
-        return mArrSchoolData.size();
+        return mArrResourceRowData.size();
     }
 
     // getView method is called for each item of ListView
@@ -39,11 +39,11 @@ public class SchoolAdapter extends BaseAdapter {
 
 
         // get the reference of textView and button
-        TextView txtSchoolTitle = (TextView) view.findViewById(R.id.txtSchoolTitle);
+        TextView txtResourceRowTitle = (TextView) view.findViewById(R.id.txtResourceRowTitle);
         Button btnAction = (Button) view.findViewById(R.id.btnAction);
 
         // Set the title and button name
-        txtSchoolTitle.setText(mArrSchoolData.get(position));
+        txtResourceRowTitle.setText(mArrResourceRowData.get(position));
 
         final int position2 = position;
 
@@ -56,8 +56,8 @@ public class SchoolAdapter extends BaseAdapter {
                 presenter.goToInternet(url);
 
                 //To put the elements in Admin Mode
-                AdminListener smallListener = new AdminListener(url, System.currentTimeMillis());
-                AdminSingleton.getInstance().setMap(url, smallListener);
+                //AdminListener smallListener = new AdminListener(url, System.currentTimeMillis());
+                //AdminSingleton.getInstance().setMap(url, smallListener);
             }
         });
 
