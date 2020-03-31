@@ -37,7 +37,7 @@ public class AdminInfoActivity extends AppCompatActivity {
 
     private void setStrings() {
 
-        AdminSingleton stringMap = AdminSingleton.getInstance(this);
+        AdminSingleton stringMap = AdminSingleton.getInstance();
 
         HashMap<String, AdminListener> mapToIterate = stringMap.getMap();
         AdminListener newListener;
@@ -51,5 +51,11 @@ public class AdminInfoActivity extends AppCompatActivity {
             numberofTimesArray[i] = newListener.getTotalClicks();
             i++;
         }
+    }
+    // Save the Singleton Map when the activity is ended.
+    @Override
+    protected void onStop() {
+        super.onStop();
+        AdminSingleton.saveMap(this);
     }
 }

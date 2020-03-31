@@ -42,4 +42,11 @@ public class SurveyActivity extends AppCompatActivity {
         Intent i = new Intent(this, OptionsActivity.class);
         startActivity(i);
     }
+
+    // Save the Singleton Map when the activity is ended.
+    @Override
+    protected void onStop() {
+        super.onStop();
+        AdminSingleton.saveMap(this);
+    }
 }

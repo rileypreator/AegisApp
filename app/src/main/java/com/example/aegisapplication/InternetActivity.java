@@ -54,4 +54,11 @@ public class InternetActivity extends AppCompatActivity {
         Incognito i = new Incognito(this);
         i.setIncognitoURL();
     }
+
+    // Save the Singleton Map when the activity is ended.
+    @Override
+    protected void onStop() {
+        super.onStop();
+        AdminSingleton.saveMap(this);
+    }
 }

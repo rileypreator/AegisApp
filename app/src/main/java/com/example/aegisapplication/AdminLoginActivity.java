@@ -30,4 +30,10 @@ public class AdminLoginActivity extends AppCompatActivity {
             }
         });
     }
+    // Save the Singleton Map when the activity is ended.
+    @Override
+    protected void onStop() {
+        super.onStop();
+        AdminSingleton.saveMap(this);
+    }
 }

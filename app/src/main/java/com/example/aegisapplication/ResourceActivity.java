@@ -11,7 +11,6 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Spinner;
-import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -167,5 +166,12 @@ Activity activity = this;
     public void goToOptions(View view){
         Intent i = new Intent(this, OptionsActivity.class);
         startActivity(i);
+    }
+
+    // Save the Singleton Map when the activity is ended.
+    @Override
+    protected void onStop() {
+        super.onStop();
+        AdminSingleton.saveMap(this);
     }
 }

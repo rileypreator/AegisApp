@@ -168,4 +168,11 @@ public class OptionsActivity extends AppCompatActivity {
         OptionsPresenter options = new OptionsPresenter(this);
         options.saveSharedPreferences(key, app);
     }
+
+    // Save the Singleton Map when the activity is ended.
+    @Override
+    protected void onStop() {
+        super.onStop();
+        AdminSingleton.saveMap(this);
+    }
 }

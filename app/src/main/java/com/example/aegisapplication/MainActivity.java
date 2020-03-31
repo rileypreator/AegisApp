@@ -23,6 +23,9 @@ public class MainActivity extends AppCompatActivity {
 
     private Button moveAlert;
     ConstraintLayout ccl;
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -41,7 +44,18 @@ public class MainActivity extends AppCompatActivity {
             }
         }));
 
+        //Create the Singleton object for each session. Retrieves the map, if there is a map stored.
+        AdminSingleton.getInstance().readMap(this);
 
+
+
+    }
+
+    // Save the Singleton Map when the activity is ended.
+    @Override
+    protected void onStop() {
+        super.onStop();
+        AdminSingleton.saveMap(this);
     }
 
     private void slideAlert() {
