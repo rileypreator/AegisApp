@@ -56,8 +56,8 @@ public class ResourceRow extends BaseAdapter {
                 presenter.goToInternet(url);
 
                 //To put the elements in Admin Mode
-                //AdminListener smallListener = new AdminListener(url, System.currentTimeMillis());
-                //AdminSingleton.getInstance().setMap(url, smallListener);
+                AdminListener smallListener = new AdminListener(url, System.currentTimeMillis());
+                AdminSingleton.getInstance().setMap(url, smallListener);
             }
         });
 
