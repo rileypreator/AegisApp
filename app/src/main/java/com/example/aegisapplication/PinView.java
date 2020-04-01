@@ -223,14 +223,14 @@ public class PinView extends Activity {
     }
 
 
-    @Override
-    public void onBackPressed() {
-        // TODO Auto-generated method stub
-
-        //App not allowed to go back to Parent activity until correct pin entered.
-        return;
-        //super.onBackPressed();
-    }
+//    @Override
+//    public void onBackPressed() {
+//        // TODO Auto-generated method stub
+//
+//        //App not allowed to go back to Parent activity until correct pin entered.
+//        return;
+//        //super.onBackPressed();
+//    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
