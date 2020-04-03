@@ -5,7 +5,11 @@ import android.content.SharedPreferences;
 import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
-
+/*
+The Options Presenter is the mediator between OptionsActivity and the Shared Preferences.
+This will save new settings to Shared Preferences as well as read teh data already stored in Shared
+Preference to provide feedback to the user on what settings are already selected.
+ */
 public class OptionsPresenter implements Runnable {
     Activity activity;
 
@@ -14,6 +18,7 @@ public class OptionsPresenter implements Runnable {
 
     }
 
+    // Saves the desired app data or user-entered URL
     public void saveSharedPreferences(String key, String address) {
         // Code borrowed from https://www.geeksforgeeks.org/shared-preferences-in-android-with-examples/
         // Storing data into SharedPreferences
@@ -36,7 +41,8 @@ public class OptionsPresenter implements Runnable {
     }
     }
     //The run() function below gets settings info from Shared Preference and fills in the Options
-    // menu with the currently saved information. This will allow the user to easily see what
+    // menu with the currently saved information. It does this by selecting the appropriate
+    // switch for the apps and displaying the user-defined URL. This will allow the user to easily see what
     // preferences are currently saved.
     @Override
     public void run() {

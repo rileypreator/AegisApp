@@ -14,9 +14,6 @@ import android.view.animation.AnticipateInterpolator;
 import android.widget.Button;
 import android.widget.TextView;
 
-import java.sql.Time;
-import java.time.LocalDate;
-
 
 public class MainActivity extends AppCompatActivity {
 
@@ -72,6 +69,7 @@ public class MainActivity extends AppCompatActivity {
         constraintSet.applyTo(ccl);
     }
 
+    // Begin button starts the next activity, Emergency Activity
     public void sendBegin(View view){
         Intent intent2 = new Intent(this, EmergencyActivity.class);
         startActivity(intent2);

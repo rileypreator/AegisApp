@@ -7,6 +7,10 @@ import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.widget.EditText;
 
+/*
+IncognitoActivity quickly closes the app by way of starting a new program. This can be another
+installed app or a web URL. The settings for Incognito can be changed in the Options menu.
+ */
 public class Incognito {
     private Activity activity;
 

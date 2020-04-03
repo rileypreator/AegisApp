@@ -93,6 +93,7 @@ String whereToGoNext;
 
     }
 
+    // Starts the Resources Activity when Resource button is selected.
     public void onClickResources(View view)
     {
         Intent intent = new Intent(this, ResourceActivity.class);
@@ -101,6 +102,7 @@ String whereToGoNext;
         startActivity(intent);
     }
 
+    // Starts the Options Activity when the options button is selected.
     public void goToOptions(View view){
         Intent i = new Intent(this, OptionsActivity.class);
         startActivity(i);

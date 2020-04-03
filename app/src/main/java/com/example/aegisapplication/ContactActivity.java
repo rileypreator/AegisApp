@@ -7,7 +7,10 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-
+/*
+The ContactActivity displays contact options for various abuse help resources. It can initiate
+several resources, including phone call and text message.
+ */
 public class ContactActivity extends AppCompatActivity {
     Button seven;
     Button eight;
@@ -56,6 +59,7 @@ public class ContactActivity extends AppCompatActivity {
         }
     };
 
+    //Gets the phone number from strings.xml.
     public void onCallClick(){
         String number = getString(R.string.hotline_call);
         startPhoneCall(number);
@@ -71,22 +75,27 @@ public class ContactActivity extends AppCompatActivity {
         openInternet(url);
     }
 
+    //Starts the ResourceActivity
     public void onResourceClick(View view){
         Intent intent = new Intent(this, SurveyActivity.class);
         startActivity(intent);
     }
 
+    // Gets phone number from appropriate button function and opens phone's dial function with
+    //  ACTION_DIAL. Loads the phone number automatically.
     public void startPhoneCall(String number) {
         Intent intent = new Intent(Intent.ACTION_DIAL);
         intent.setData(Uri.parse("tel:" + number));
         startActivity(intent);
     }
 
+    // Starts the WebView internet browser. Passes the desired URL.
     public void openInternet(String url){
         InformationPresenter presenter = new InformationPresenter(this);
         presenter.goToInternet(url);
     }
 
+    // Opens the phone's text message and populates the To: address.
     public void onTextClick(){
         Intent smsIntent = new Intent(Intent.ACTION_VIEW);
         smsIntent.setData(Uri.parse("sms:741741"));
@@ -94,20 +103,24 @@ public class ContactActivity extends AppCompatActivity {
         startActivity(smsIntent);
     }
 
+    // Starts incognito mode, which immediately exits the app to the desired location.
     public void startIncognito(View view){
         Incognito i = new Incognito(this);
         i.setIncognitoURL();
     }
 
+    // Starts OptionsActivity where the user can make settings changes.
     public void goToOptions(View view){
         Intent i = new Intent(this, OptionsActivity.class);
         startActivity(i);
     }
 
+    // Saves to the Admin Singelton map whenever a button is pressed.
     public void saveAdminListener(){
         AdminListener smallListener = new AdminListener(btnName, System.currentTimeMillis());
         AdminSingleton.getInstance().setMap(btnName, smallListener);
     }
+
     // Save the Singleton Map when the activity is ended.
     @Override
     protected void onStop() {

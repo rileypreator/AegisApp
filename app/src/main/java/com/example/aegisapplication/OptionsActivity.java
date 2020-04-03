@@ -6,9 +6,14 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Switch;
-
+/*
+The Options Activity allows the user to set the desired Incognito activity. By this the user
+defines what the app will do when Incognito is started. The logic only allows one app to be
+selected at a time. Preferences are saved to SharedPreference.
+ */
 public class OptionsActivity extends AppCompatActivity {
 
+    // One switch for each of the selectable apps
     Switch one;
     Switch two;
     Switch three;
@@ -41,6 +46,10 @@ public class OptionsActivity extends AppCompatActivity {
     }
        View.OnClickListener listener = new View.OnClickListener() {
 
+        // In the onClick function if a switch is selected, all of the other switches are
+           // deselected. This means that only one app may selected at any given time.
+           // each string gets its app's ID and saves that to Shared Preferences to be used when
+           // Incognito is started.
             @Override
             public void onClick(View v) {
                 switch(v.getId()){
@@ -153,7 +162,7 @@ public class OptionsActivity extends AppCompatActivity {
         i.setIncognitoURL();
     }
 
-    // Saves the Incognito URl as entered by the user
+    // Saves the Incognito URL as entered by the user
     public void saveIncognitoURL(View view){
         String key = "INCOGNITO_URL";
         EditText editText = findViewById(R.id.URLinput);
