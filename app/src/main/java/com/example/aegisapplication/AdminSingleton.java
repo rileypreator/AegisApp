@@ -25,6 +25,7 @@ public class AdminSingleton {
         return instance;
     }
 
+    //Save the Admin map to Shared Pref
     public static void saveMap(Activity activity){
         //convert to string using gson
         Gson gson = new Gson();
@@ -35,11 +36,11 @@ public class AdminSingleton {
         prefs.edit().putString("ADMIN_MAP", adminMapString).apply();
     }
 
+    // Retrieve the Admin map from Shared Pref to be used in AdminInfoActivity
     public void readMap(Activity activity){
         Gson gson = new Gson();
         SharedPreferences prefs = activity.getSharedPreferences("ADMIN", MODE_PRIVATE);
         String storedAdminMapString = prefs.getString("ADMIN_MAP", "");
-        //map = gson.fromJson(storedAdminMapString, AdminSingleton.class);
         java.lang.reflect.Type type = new TypeToken<HashMap<String, AdminListener>>(){}.getType();
         map = gson.fromJson(storedAdminMapString, type);
     }
