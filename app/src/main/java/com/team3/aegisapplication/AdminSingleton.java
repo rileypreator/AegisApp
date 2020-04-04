@@ -1,4 +1,4 @@
-package aegisapplication;
+package com.team3.aegisapplication;
 
 import android.app.Activity;
 import android.content.SharedPreferences;

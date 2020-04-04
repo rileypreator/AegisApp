@@ -1,4 +1,4 @@
-package aegisapplication;
+package com.team3.aegisapplication;
 
 import android.content.Intent;
 import android.os.Bundle;
