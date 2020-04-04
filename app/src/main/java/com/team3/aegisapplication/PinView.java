@@ -18,6 +18,9 @@ import android.widget.TextView;
 
 public class PinView extends Activity {
 
+    //This class was brought over from another project not created by Aegis Application
+    //Although somethings were changed in this application the activity was mostly the same
+    //From what was used initially
     String userEntered;
     String userPin = "8888";
 
