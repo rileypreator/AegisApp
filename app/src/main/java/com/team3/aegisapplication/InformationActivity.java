@@ -19,10 +19,15 @@ String whereToGoNext;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        // create the activity; set the view
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_information);
         Intent intent = getIntent();
+
+        // determine if the information is for the user or for someone else
         isForMe = intent.getBooleanExtra("isForMe", true);
+
+        // get the language specific abuse types from the arrays
         abuseTypes = getResources().getStringArray(R.array.abuse_types);
 
 
@@ -32,8 +37,9 @@ String whereToGoNext;
         ArrayAdapter<String> adapter= new ArrayAdapter<String>(this,android.
                 R.layout.simple_spinner_dropdown_item ,abuseTypes);
 
+        // set the spinner's content
         abuseTypeSpinner.setAdapter(adapter);
-
+        // when clicked...
         abuseTypeSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
 
             @Override
@@ -43,19 +49,25 @@ String whereToGoNext;
                 int sid=abuseTypeSpinner.getSelectedItemPosition();
                 TextView textView = findViewById(R.id.textView4);
                 textView.setMovementMethod(new ScrollingMovementMethod());
+
+                // if/else statement to display definitions depending on which abuse type was selected
+                //physical abuse
                 if (abuseTypes[sid] == abuseTypes[0]) {
                     whereToGoNext = "physical";
 
                     textView.setText(R.string.physical_definition);
                 }
+                //sexual abuse
                 else if (abuseTypes[sid] == abuseTypes[1]) {
                     whereToGoNext = "sexual";
                     textView.setText(R.string.sexual_definition);
                 }
+                // verbal abuse
                 else if (abuseTypes[sid] == abuseTypes[2]) {
                     whereToGoNext = "verbal";
                     textView.setText(R.string.verbal_definition);
                 }
+                // emotional and mental abuse
                 else if (abuseTypes[sid] == abuseTypes[3]) {
                     whereToGoNext = "mental";
                     textView.setText(R.string.mental_definition);
@@ -63,6 +75,7 @@ String whereToGoNext;
             }
             @Override
             public void onNothingSelected(AdapterView<?> parent) {
+                // by default, we set the spinner to physical abuse when nothing is selected
                 whereToGoNext = "physical";
                 TextView textView = findViewById(R.id.textView4);
                 textView.setMovementMethod(new ScrollingMovementMethod());

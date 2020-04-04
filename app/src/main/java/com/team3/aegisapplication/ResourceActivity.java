@@ -28,10 +28,13 @@ Activity activity = this;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        // create activity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_resource);
 
         Intent intent = getIntent();
+
+        //determine who the audience is, what abuse type we are going to display first, and what abuse types we have
         isForMe = intent.getBooleanExtra("audience_type", true);
         resource_type = intent.getStringExtra("resource_type");
         abuseTypes = getApplicationContext().getResources().getStringArray(R.array.abuse_types);
@@ -40,31 +43,37 @@ Activity activity = this;
 
         // Get reference of SpinnerView from layout/main_activity.xml
         abuseTypeSpinner =(Spinner)findViewById(R.id.spinner2);
-
+        // set the spinner to the array's values (language specific) just like in the information activity
         ArrayAdapter<String> adapter= new ArrayAdapter<String>(this,android.
                 R.layout.simple_spinner_dropdown_item, abuseTypes);
 
         abuseTypeSpinner.setAdapter(adapter);
 
+        // switch statement to set the spinner's selection
         int selectionID;
         switch (resource_type)
         {
+            // physical abuse
             case "physical":{
                 selectionID = 0;
                 break;
             }
+            // sexual abuse
             case "sexual":{
                 selectionID = 1;
                 break;
             }
+            // verbal abuse
             case "verbal":{
                 selectionID = 2;
                 break;
             }
+            // emotional and mental abuse
             case "mental":{
                 selectionID = 3;
                 break;
             }
+            // default selection is physical abuse
             default:
             {
                 selectionID = 0;
@@ -72,70 +81,96 @@ Activity activity = this;
             }
         }
         abuseTypeSpinner.setSelection(selectionID);
-
+        // when spinner is clicked...
         abuseTypeSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
 
             @Override
             public void onItemSelected(AdapterView<?> parent, View view,
                                        int position, long id) {
-                // Get select item
+                // Get new selected item
                 int sid=abuseTypeSpinner.getSelectedItemPosition();
-
+                // if statement (like in information activity) to change the spinner's selection
+                // physical abuse
                 if (abuseTypes[sid] == abuseTypes[0]) {
                     whereToGoNext = "physical";
+                    // if audience is self
                     if(isForMe) {
+                        // get the resources and their names
                         resources_names = getResources().getStringArray(R.array.physical_forMe_names);
                         resources = getResources().getStringArray(R.array.physical_forMe);
                     }
+                    // if for someone else
                     else {
+                        // get the resources and their names
                         resources_names = getResources().getStringArray(R.array.physical_forSomeoneElse_names);
                         resources = getResources().getStringArray(R.array.physical_forSomeoneElse);
                     }
                 }
+                // sexual abuse
                 else if (abuseTypes[sid] == abuseTypes[1]) {
                     whereToGoNext = "sexual";
+                    // if audience is self
                     if(isForMe) {
+                        // get the resources and their names
                         resources = getResources().getStringArray(R.array.sexual_forMe);
                         resources_names = getResources().getStringArray(R.array.sexual_forMe_names);
                     }
+                    // if for someone else
                     else {
+                        // get the resources and their names
                         resources = getResources().getStringArray(R.array.sexual_forSomeoneElse);
                         resources_names = getResources().getStringArray(R.array.sexual_forSomeoneElse_names);
                     }
                 }
+                // verbal abuse
                 else if (abuseTypes[sid] == abuseTypes[2]) {
                     whereToGoNext = "verbal";
+                    // if audience is self
                     if(isForMe) {
+                        // get the resources and their names
                         resources = getResources().getStringArray(R.array.verbal_forMe);
                         resources_names = getResources().getStringArray(R.array.verbal_forMe_names);
                     }
+                    // if for someone else
                     else {
+                        // get the resources and their names
                         resources = getResources().getStringArray(R.array.verbal_forSomeoneElse);
                         resources_names = getResources().getStringArray(R.array.verbal_forSomeoneElse_names);
                     }
                 }
+                // emotional and mental abuse
                 else if (abuseTypes[sid] == abuseTypes[3]) {
                     whereToGoNext = "mental";
+                    // if audience is self
                     if(isForMe) {
+                        // get the resources and their names
                         resources = getResources().getStringArray(R.array.mental_forMe);
                         resources_names = getResources().getStringArray(R.array.mental_forMe_names);
                     }
+                    // if for someone else
                     else {
+                        // get the resources and their names
                         resources = getResources().getStringArray(R.array.mental_forSomeoneElse);
                         resources_names = getResources().getStringArray(R.array.mental_forSomeoneElse_names);
                     }
                 }
-
-                //ArrayAdapter<String> adapter2 = new ArrayAdapter<String>(context, android.R.layout.simple_list_item_1, resources);
+                // create array lists of resource names and URLs
                 ArrayList<String> a = new ArrayList<>(Arrays.asList(resources_names));
                 ArrayList<String> b = new ArrayList<>(Arrays.asList(resources));
+
+                // create a custom row view for each url and name
                 ResourceRow mAdapter = new ResourceRow(context, a, b, activity);
+
+                // set the listview to the custom row view
                 ListView listView = findViewById(R.id.listView2);
                 listView.setAdapter(mAdapter);
+
+                // update the view
                 mAdapter.notifyDataSetChanged();
             }
             @Override
             public void onNothingSelected(AdapterView<?> parent) {
+                // default is physical abuse
                 whereToGoNext = "physical";
             }
         });

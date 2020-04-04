@@ -11,13 +11,18 @@ public class SurveyActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        // CONSTRUCTOR
+        // create activity to determine who the audience is
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_survey);
     }
 
     public void onMyselfClick(View view)
     {
+        // in this case, the resources should be shown for the actual user
         isForMe = true;
+
+        // start an information activity to show definitions of abuse; pass in the audience
         Intent intent = new Intent(this, InformationActivity.class);
         intent.putExtra("isForMe", isForMe);
         startActivity(intent);
@@ -25,7 +30,10 @@ public class SurveyActivity extends AppCompatActivity {
 
     public void onSomeoneElseClick(View view)
     {
+        // in this case, the resources should be shown for someone else
         isForMe = false;
+
+        // start an information activity to show definitions of abuse; pass in the audience
         Intent intent = new Intent(this, InformationActivity.class);
         intent.putExtra("isForMe", isForMe);
         startActivity(intent);
@@ -38,6 +46,7 @@ public class SurveyActivity extends AppCompatActivity {
     }
 
     public void goToOptions(View view){
+        // new intent to go to the options activity to change the incognito default app or website
         Intent i = new Intent(this, OptionsActivity.class);
         startActivity(i);
     }

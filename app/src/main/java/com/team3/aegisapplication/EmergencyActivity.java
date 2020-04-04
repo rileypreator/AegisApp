@@ -23,13 +23,18 @@ public class EmergencyActivity extends AppCompatActivity {
 
     public void onEmergencyClick(View view)
     {
+        // opens the phone's default phone app
         Intent intent = new Intent(Intent.ACTION_DIAL);
+
+        // enters the number for 911
         intent.setData(Uri.parse("tel:911"));
+
         startActivity(intent);
     }
 
     public void onNonEmergencyClick(View view)
     {
+        // starts contact activity to activate chat, text or other phone numbers
         Intent intent = new Intent(this, ContactActivity.class);
         startActivity(intent);
     }
@@ -42,6 +47,7 @@ public class EmergencyActivity extends AppCompatActivity {
     }
 
     public void goToOptions(View view){
+        // goes to activity to set incognito default website or app
         Intent i = new Intent(this, OptionsActivity.class);
         startActivity(i);
     }

@@ -19,7 +19,10 @@ public class ResourceRow extends BaseAdapter {
     private Activity activity;
 
     public ResourceRow(Context context, ArrayList arrResourceRowData, ArrayList arrResourcesData, Activity arrActivity) {
+        // CONSTRUCTOR
         super();
+
+        // set class data to the passed in data
         mContext = context;
         mArrResourceRowData = arrResourceRowData;
         resourcesData = arrResourcesData;
@@ -51,7 +54,9 @@ public class ResourceRow extends BaseAdapter {
         btnAction.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                // get the url from the position we are at in the array
                 String url = resourcesData.get(position2);
+                // start new activity to go to the URL specified
                 InformationPresenter presenter = new InformationPresenter(activity);
                 presenter.goToInternet(url);
 
