@@ -4,18 +4,20 @@ import java.sql.Time;
 
 public class AdminListener {
 
-
+    //Listener to store all of the information for one link
     private int totalClicks;
     private Time lastTimeClicked;
     private String link;
     private int type;
 
+    //CONSTRUCTOR
     public AdminListener() {
         totalClicks = 0;
         lastTimeClicked = null;
         type = 0;
     }
 
+    //NON-DEFAULT CONTRUCTOR
     public AdminListener(String link, long type) {
         this.link = link;
         totalClicks = 0;

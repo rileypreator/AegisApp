@@ -17,7 +17,8 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-
+    //button and layout for the initial alert that is given every time the
+    //app is opened
     private Button moveAlert;
     ConstraintLayout ccl;
 
@@ -28,9 +29,12 @@ public class MainActivity extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        //TextView for the opening warning alert
         TextView textView = findViewById(R.id.openingWelcome);
         textView.setMovementMethod(new ScrollingMovementMethod());
 
+        //these are the change the views between when you go from the alert the main screen
         moveAlert = findViewById(R.id.closeWelcome);
         ccl = findViewById(R.id.mainLayout);
 
@@ -57,6 +61,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void slideAlert() {
 
+        //This function translates between the two layouts that are used in the activity
         //https://www.journaldev.com/23344/android-constraint-layout-animation
         ConstraintSet constraintSet = new ConstraintSet();
         constraintSet.clone(this, R.layout.activity_after_alert);
@@ -80,7 +85,7 @@ public class MainActivity extends AppCompatActivity {
         Incognito i = new Incognito(this);
         i.setIncognitoURL();
     }
-
+    //Goes to options
     public void goToOptions(View view){
         Intent i = new Intent(this, OptionsActivity.class);
         startActivity(i);

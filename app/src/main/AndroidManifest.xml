@@ -14,7 +14,6 @@
         >
         <activity android:name="com.team3.aegisapplication.AdminInfoActivity"></activity>
         <activity android:name="com.team3.aegisapplication.PinView"></activity>
-        <activity android:name="com.team3.aegisapplication.AdminLoginActivity"></activity>
         <activity android:name="com.team3.aegisapplication.ContactActivity"></activity>
         <activity android:name="com.team3.aegisapplication.EmergencyActivity"></activity>
         <activity android:name="com.team3.aegisapplication.InformationActivity"></activity>
