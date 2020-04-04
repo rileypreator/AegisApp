@@ -1,4 +1,4 @@
-package com.example.applicationaegis;
+package aegisapplication;
 
 import android.content.Context;
 import android.os.Bundle;

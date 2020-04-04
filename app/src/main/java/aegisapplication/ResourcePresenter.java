@@ -1,15 +1,16 @@
-package com.example.applicationaegis;
+package aegisapplication;
 
 import android.app.Activity;
 import android.content.Intent;
+
 /*
-Information Presenter starts the Internet Activity which uses WebView.
+Resource Presenter starts the Internet Activity when called to do so.
  */
-public class InformationPresenter {
+public class ResourcePresenter {
     Activity activity;
     String url;
 
-    public InformationPresenter(Activity activity){
+    public ResourcePresenter(Activity activity){
         this.activity = activity;
     }
     // This function is part of the internet package and can be duplicated for any Presenter

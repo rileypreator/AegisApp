@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.applicationaegis">
+    package="aegisapplication">
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
@@ -12,24 +12,24 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true"
         >
-        <activity android:name="com.example.applicationaegis.AdminInfoActivity"></activity>
-        <activity android:name="com.example.applicationaegis.PinView"></activity>
-        <activity android:name="com.example.applicationaegis.AdminLoginActivity"></activity>
-        <activity android:name="com.example.applicationaegis.ContactActivity"></activity>
-        <activity android:name="com.example.applicationaegis.EmergencyActivity"></activity>
-        <activity android:name="com.example.applicationaegis.InformationActivity"></activity>
-        <activity android:name="com.example.applicationaegis.InternetActivity"></activity>
-        <activity android:name="com.example.applicationaegis.OptionsActivity"></activity>
-        <activity android:name="com.example.applicationaegis.SurveyActivity"></activity>
-        <activity android:name="com.example.applicationaegis.ResourceActivity"></activity>
-        <activity android:name="com.example.applicationaegis.MainActivity">
+        <activity android:name="aegisapplication.AdminInfoActivity"></activity>
+        <activity android:name="aegisapplication.PinView"></activity>
+        <activity android:name="aegisapplication.AdminLoginActivity"></activity>
+        <activity android:name="aegisapplication.ContactActivity"></activity>
+        <activity android:name="aegisapplication.EmergencyActivity"></activity>
+        <activity android:name="aegisapplication.InformationActivity"></activity>
+        <activity android:name="aegisapplication.InternetActivity"></activity>
+        <activity android:name="aegisapplication.OptionsActivity"></activity>
+        <activity android:name="aegisapplication.SurveyActivity"></activity>
+        <activity android:name="aegisapplication.ResourceActivity"></activity>
+        <activity android:name="aegisapplication.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.applicationaegis.SplashActivity"
+        <activity android:name="aegisapplication.SplashActivity"
             android:theme="@style/SplashTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>

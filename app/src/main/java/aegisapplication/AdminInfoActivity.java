@@ -1,4 +1,4 @@
-package com.example.applicationaegis;
+package aegisapplication;
 
 import android.os.Bundle;
 import android.widget.ListView;

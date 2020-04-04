@@ -1,4 +1,4 @@
-package com.example.applicationaegis;
+package aegisapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
 
